@@ -25,7 +25,6 @@ References I used to compile this post:
 
 I'll help create a comprehensive table of these equations. This would be quite a large table with multiple sections. Let me organize it by sections:
 
-```markdown
 | Notes | Vector calculus notation | Einstein notation | Cartesian components |
 |-------|-------------------------|-------------------|---------------------|
 | Basic vector (rank 1 tensor) | $\vec{a}$ | $a_i$ | $\begin{bmatrix} a_x\\ a_y\\ a_z \end{bmatrix}$ |
@@ -40,7 +39,7 @@ I'll help create a comprehensive table of these equations. This would be quite a
 | Gradient of a vector - Creates matrix of partial derivatives | $\vec{\nabla} \vec{a}$ | $\frac{\partial a_i}{\partial x_j}$ | $\begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y}  & \frac{\partial a_x}{\partial z} \\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z}\\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z}  \end{bmatrix}$ |
 | Material derivative - Total time derivative following fluid motion | $\frac{D\vec{V}}{Dt}$ | $\frac{Dv_j}{Dt}$ | $\begin{align*}\frac{Du}{Dt} &= \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}\\\frac{Dv}{Dt} &= \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z}\\\frac{Dw}{Dt} &= \frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}\end{align*}$ |
 | Stress tensor - Sum of pressure and viscous stress | $\sigma = -P I + \tau$ | $\sigma_{ij}= -P\delta_{ij} + \tau_{ij}$ | $\sigma = -\begin{bmatrix}P & 0 & 0\\ 0 & P & 0\\0 & 0 & P \end{bmatrix} + \begin{bmatrix}\tau_{xx} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \tau_{yy} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \tau_{zz}\end{bmatrix}$ |
-```
+
 
 ### Format
 The format is as follows:
