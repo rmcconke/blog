@@ -23,6 +23,25 @@ References I used to compile this post:
 
 ## Prerequisites
 
+I'll help create a comprehensive table of these equations. This would be quite a large table with multiple sections. Let me organize it by sections:
+
+```markdown
+| Notes | Vector calculus notation | Einstein notation | Cartesian components |
+|-------|-------------------------|-------------------|---------------------|
+| Basic vector (rank 1 tensor) | $\vec{a}$ | $a_i$ | $\begin{bmatrix} a_x\\ a_y\\ a_z \end{bmatrix}$ |
+| Velocity vector - Common notation in fluid mechanics | $\vec{V}$ | $v_i$ | $\begin{bmatrix} u\\ v\\ w \end{bmatrix}$ |
+| Matrix (rank 2 tensor) - General form | $A$ | $A_{ij}$ | $\begin{bmatrix} A_{xx} & A_{xy} & A_{xz}\\ A_{yx} & A_{yy} & A_{yz}\\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$ |
+| Identity matrix - Special case where diagonal elements are 1 | $I$ | $\delta_{ij}$ | $\begin{bmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{bmatrix}$ |
+| Dot product (inner product) - Scalar result from two vectors | $\vec{a}\cdot \vec{b}$ | $a_i b_i$ | $a_x b_x + a_y b_y + a_z b_z$ |
+| Divergence of a vector - Scalar result representing flux | $\vec{\nabla}\cdot \vec{a}$ | $\frac{\partial a_i}{\partial x_i}$ | $\frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$ |
+| Vector-matrix product | $\vec{a}\cdot B$ | $a_i B_{ij}$ | $\begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz}\\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz}\\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$ |
+| Divergence of a tensor - Vector result | $\vec{\nabla}\cdot A$ | $\frac{\partial A_{ij}}{\partial x_i}$ | $\begin{bmatrix} \frac{\partial B_{xx}}{\partial x} + \frac{\partial B_{yx}}{\partial y} + \frac{\partial B_{zx}}{\partial z}\\ \frac{\partial B_{xy}}{\partial x} + \frac{\partial B_{yy}}{\partial y} + \frac{\partial B_{zy}}{\partial z}\\ \frac{\partial B_{xz}}{\partial x} + \frac{\partial B_{yz}}{\partial y} + \frac{\partial B_{zz}}{\partial z} \end{bmatrix}$ |
+| Tensor product (outer product) - Creates matrix from two vectors | $\vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$ | $a_i b_j$ | $\begin{bmatrix} a_x b_x & a_x b_y & a_x b_z \\ a_y b_x & a_y b_y & a_y b_z \\ a_z b_x & a_z b_y & a_z b_z  \end{bmatrix}$ |
+| Gradient of a vector - Creates matrix of partial derivatives | $\vec{\nabla} \vec{a}$ | $\frac{\partial a_i}{\partial x_j}$ | $\begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y}  & \frac{\partial a_x}{\partial z} \\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z}\\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z}  \end{bmatrix}$ |
+| Material derivative - Total time derivative following fluid motion | $\frac{D\vec{V}}{Dt}$ | $\frac{Dv_j}{Dt}$ | $\begin{align*}\frac{Du}{Dt} &= \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}\\\frac{Dv}{Dt} &= \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z}\\\frac{Dw}{Dt} &= \frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}\end{align*}$ |
+| Stress tensor - Sum of pressure and viscous stress | $\sigma = -P I + \tau$ | $\sigma_{ij}= -P\delta_{ij} + \tau_{ij}$ | $\sigma = -\begin{bmatrix}P & 0 & 0\\ 0 & P & 0\\0 & 0 & P \end{bmatrix} + \begin{bmatrix}\tau_{xx} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \tau_{yy} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \tau_{zz}\end{bmatrix}$ |
+```
+
 ### Format
 The format is as follows:
 
