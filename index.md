@@ -2,20 +2,11 @@
 layout: page
 ---
 
-<img alt="Teddy Koker" src="/images/prof_pic.jpg"
+<img alt="Ryley McConkey" src="/images/prof_pic.jpg"
     style="float: right; max-width: 33%; margin: 0 0 1em 2em; border-radius: 50%">
 
 # Ryley McConkey
-
-I am a first-year PhD student at [MIT EECS](https://www.eecs.mit.edu/), advised by Professor [Tess Smidt](https://blondegeek.github.io/).
-
-Previously, I have worked at [MIT Lincoln Laboratory](https://www.ll.mit.edu/), [Lightning AI](https://lightning.ai/) and [Harvard Medical School](https://hms.harvard.edu/).
-
 [Email](mailto:rmcconke@mit.edu) / [Github](https://github.com/rmcconke) / [Google Scholar](https://scholar.google.com/citations?user=GcAsX_EAAAAJ&hl=en)
-
-
-## Research
-
 
 I graduated from the University of Alberta in 2019 with a Bachelor's of Science in Mechanical Engineering (co-op). Pursing an interest in turbulence and computational fluid dynamics (CFD), I then began a Master's degree at the University of Waterloo. In my Master's research, I was focused on simulating a new type of wind turbine which uses vortex induced vibration (VIV) to generate energy. Then, I direct transferred to a PhD in 2020. My PhD was focused on developing new turbulence models using machine learning. I completed a 6 month visit at the University of Manchester in 2022-2023, where I focused on data-driven turbulence modelling on complex 3D flows. After completing my PhD in 2024, I have recently started a Postdoc at MIT in Tess Smidt's [atomic architects](https://atomicarchitects.com/) group. More to come!
 

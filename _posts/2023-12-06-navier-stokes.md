@@ -127,7 +127,7 @@ We start with Cauchy's equation, then expand the various terms to arrive at the 
 
 #### Material derivative of velocity
 
-The material derivative operator is notated as $$\rho D()/Dt$$. The material derivative of velocity appears frequently.
+The material derivative operator is notated as $D()/Dt$. The material derivative of velocity appears frequently.
 
 $$\frac{D\vec{V}}{Dt} = \frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}$$
 
@@ -151,7 +151,7 @@ $$\sigma = -\begin{bmatrix}P & 0 & 0\\ 0 & P & 0\\0 & 0 & P \end{bmatrix} + \beg
 
 #### Viscous stress tensor
 
-This is the constitutive relation describing how shear is converted to a viscous stress. $$\zeta$$ is the second viscosity or bulk viscosity of the fluid, and is usually assumed to be zero. $$\mu$$ is the dynamic viscosity. Shown here is a linear relationship (Newtonian fluid).
+This is the constitutive relation describing how shear is converted to a viscous stress. $\zeta$ is the second viscosity or bulk viscosity of the fluid, and is usually assumed to be zero. $\mu$ is the dynamic viscosity. Shown here is a linear relationship (Newtonian fluid).
 
 $$\tau = \zeta (\vec{\nabla}\cdot \vec{V})I + \mu [\vec{\nabla}\vec{V} + (\vec{\nabla}\vec{V})^\text{T} - \tfrac{2}{3}(\vec{\nabla} \cdot \vec{V})I ]$$
 
@@ -178,7 +178,7 @@ $$\frac{\partial \rho}{\partial t} + \frac{\partial(\rho u)}{\partial x} + \frac
 
 ### Incompressible continuity equation
 
-Assumes $$\rho$$ is constant.
+Assumes $\rho$ is constant.
 
 $$\vec{\nabla} \cdot \vec{V} = 0$$
 
@@ -216,7 +216,7 @@ $$\begin{align*}
 
 ### Compressible Navier-Stokes equations
 
-Assuming $$\mu$$ is constant, and a Newtonian fluid, we get the compressible Navier-Stokes equations:
+Assuming $\mu$ is constant, and a Newtonian fluid, we get the compressible Navier-Stokes equations:
 
 $$\rho \frac{D\vec{V}}{Dt} = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \tfrac{1}{3}\mu \vec{\nabla}(\vec{\nabla}\cdot\vec{V}) + \rho \vec{g}$$
 
@@ -233,7 +233,7 @@ $$
 
 ### Incompressible Navier-Stokes equations
 
-Assuming $$\mu$$ is constant, $$\rho$$ is constant, and a Newtonian fluid, we get the incompressible Navier-Stokes equations:
+Assuming $\mu$ is constant, $\rho$ is constant, and a Newtonian fluid, we get the incompressible Navier-Stokes equations:
 
 $$\rho \frac{D\vec{V}}{Dt} = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \rho \vec{g}$$
 
@@ -246,7 +246,7 @@ $$\begin{align*}
     \rho\frac{D w}{Dt} &= - \frac{\partial P}{\partial z} + \mu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2}  \right) + \rho g_z
 \end{align*}$$
 
-We can also write the incompressible Navier-Stokes equations in terms of kinematic viscosity $$\nu = \mu/\rho$$:
+We can also write the incompressible Navier-Stokes equations in terms of kinematic viscosity $\nu = \mu/\rho$:
 
 $$ \frac{D\vec{V}}{Dt} = - \frac{1}{\nu}\vec{\nabla} P + \nu \nabla^2 \vec{V} + \vec{g}$$
 
@@ -254,10 +254,7 @@ $$ \frac{D\vec{V}}{Dt} = - \frac{1}{\nu}\vec{\nabla} P + \nu \nabla^2 \vec{V} + 
 $$ \frac{D v_j}{Dt} = - \frac{1}{\nu}\frac{\partial P}{\partial x_j} + \nu \frac{\partial^2v_j}{\partial x_i \partial x_i} + g_j$$
 
 $$\begin{align*}
-    \frac{D u}{Dt} &= - \frac{1}{\nu}\frac{\partial P}{\partial x} + \nu \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2}  \right)  +  g_x\\
-    \frac{D v}{Dt} &= - \frac{1}{\nu}\frac{\partial P}{\partial y} + \nu \left( \frac{\partial^2 v}{\partial x^2} +\frac{\partial^2 v}{\partial y^2} +\frac{\partial^2 v}{\partial z^2}  \right) +   g_y\\
-    \frac{D w}{Dt} &= - \frac{1}{\nu}\frac{\partial P}{\partial z} + \nu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2}  \right) +  g_z
+    \frac{D u}{Dt} &= - \frac{1}{\rho}\frac{\partial P}{\partial x} + \nu \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2}  \right)  +  g_x\\
+    \frac{D v}{Dt} &= - \frac{1}{\rho}\frac{\partial P}{\partial y} + \nu \left( \frac{\partial^2 v}{\partial x^2} +\frac{\partial^2 v}{\partial y^2} +\frac{\partial^2 v}{\partial z^2}  \right) +   g_y\\
+    \frac{D w}{Dt} &= - \frac{1}{\rho}\frac{\partial P}{\partial z} + \nu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2}  \right) +  g_z
 \end{align*}$$
-
-
-If you find any errors in the above, please contact me (rmcconke@uwaterloo.ca) so that I can fix them. If you found this useful, please let me know!
