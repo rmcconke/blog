@@ -57,7 +57,7 @@ nav {
   background-size: auto;
   background-position: center;
   background-attachment: scroll;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   z-index: -1;
   margin: 0;
   padding: 0;
