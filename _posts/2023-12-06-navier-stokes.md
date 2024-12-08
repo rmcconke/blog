@@ -218,11 +218,9 @@ Here, I give the full viscous stress tensor. For most fluids analysis, the bulk 
 </div>
 
 <hr class="remark-start">
-<div style="text-align: right;">
-<span class="ballet-fancy">Remark</span>
+<span class="ballet-fancy">Remark.</span>
 
 For most fluids, the viscous stress tensor is deviatoric.
-</div>
 <hr class="remark-end">
 
 
