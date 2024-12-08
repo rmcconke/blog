@@ -46,24 +46,24 @@ References I used to compile this post:
 <tbody>
 <tr>
 <td>Vector calculus notation</td>
-<td style="padding: 1em">$\displaystyle \vec{a}$</td>
-<td style="padding: 1em">$\displaystyle \vec{V}$</td>
-<td style="padding: 1em">$\displaystyle A$</td>
-<td style="padding: 1em">$\displaystyle I$</td>
+<td>$\displaystyle \vec{a}$</td>
+<td>$\displaystyle \vec{V}$</td>
+<td>$\displaystyle A$</td>
+<td>$\displaystyle I$</td>
 </tr>
 <tr>
 <td>Einstein notation</td>
-<td style="padding: 1em">$\displaystyle a_i$</td>
-<td style="padding: 1em">$\displaystyle v_i$</td>
-<td style="padding: 1em">$\displaystyle A_{ij}$</td>
-<td style="padding: 1em">$\displaystyle \delta_{ij}$</td>
+<td>$\displaystyle a_i$</td>
+<td>$\displaystyle v_i$</td>
+<td>$\displaystyle A_{ij}$</td>
+<td>$\displaystyle \delta_{ij}$</td>
 </tr>
 <tr>
 <td>Cartesian components</td>
-<td>$\displaystyle \begin{bmatrix} a_x \\ \phantom{a_x} a_y \\ \phantom{a_x} a_z \end{bmatrix}$</td>
-<td>$\displaystyle \begin{bmatrix} u \\ \phantom{u} v \\ \phantom{u} w \end{bmatrix}$</td>
-<td>$\displaystyle \begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ \phantom{A_{xx}} A_{yx} & A_{yy} & A_{yz} \\ \phantom{A_{xx}} A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$</td>
-<td>$\displaystyle \begin{bmatrix} 1 & 0 & 0 \\ \phantom{1} 0 & 1 & 0 \\ \phantom{1} 0 & 0 & 1 \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} u \\ v \\ w \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$</td>
 </tr>
 </tbody>
 </table>
