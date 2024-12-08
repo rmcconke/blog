@@ -10,12 +10,21 @@ background: /images/rock.jpg  # Add this line
 ---
 
 ## Introduction
-I find is much easier to understand a notation type when it's written beside a notation I already know.
-In this post, I will give several important equations in fluid mechanics in three forms: vector calculus notation, Einstein notation, and with the Cartesian components written out. The purpose of this post is for education.
-Additionally, I start with the more general Cauchy equation and explain when we make certain assumptions to get the compressible and incompressible Navier-Stokes equations.
+The Rosetta stone is an important rock that helped us [understand Egyptian hieroglyphics](https://en.wikipedia.org/wiki/Rosetta_Stone). I know that I certainly find it easier to understand a notation when it's written beside a notation I already know. 
+
+In this post, I will give several important equations in fluid mechanics in three forms: vector calculus notation, Einstein notation, and with the Cartesian components written out. I start with the more general Cauchy equation and explain when we make certain assumptions to get the compressible and incompressible Navier-Stokes equations.
+
+The general roadmap is:
+1: Define: tensors, operations, material derivative, stress tensor, viscous stress tensor.
+2: Continuity equation: compressible, then incompressible ($\rho$ is constant).
+3. Momentum equation: 
+    1. Cauchy's momentum equation for a general continuum,
+    2. Expand it in terms of isotropic/deviatoric stresses.
+    3. Apply Newtonian fluid to get compressible Navier-Stokes.
+    4. Apply constant density to 3. to get incompressible Navier-Stokes.  
 
 References I used to compile this post:
-1. &Ccedil;engel and Cimbala, *Fluid Mechanics: Fundamentals and Applications*, McGraw Hill, 4th Edition.
+1. My favourite fluid mechanics book: &Ccedil;engel and Cimbala, *Fluid Mechanics: Fundamentals and Applications*, McGraw Hill, 4th Edition 
 2. Pope, *Turbulent Flows*, Cambridge University Press.
 3. [Wikipedia Page](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Navier-Stokes Equations
 
