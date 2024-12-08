@@ -156,14 +156,13 @@ The material/total/substantial derivative is an important quantity in continuum 
 
 A *stress tensor* is a rank 2 tensor that gives us the individual stresses on each face of a fluid element. It's convenient to separate this tensor into *pressure* (isotropic) and *viscous* (eventually, this will be deviatoric) components.
 
-<span class="remark-fancy">Remark.</span>
+<span class="remark-fancy">Remark.</span><hr>
 
-<hr>
 *Any* rank 2 tensor (for example, the Cauchy stress tensor) can be decomposed into an *isotropic* tensor and a *deviatoric* tensor:
 
 $$ A_{ij} = A^{iso}_{ij} + A^{dev}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A_{ij} - \frac{1}{3}A_{kk}\delta_{ij}\right) $$
 
-The isotropic tensor is the same in all directions. It is a scalar multiple of the identity tensor. The remaining part of the tensor (after we substract away the isotropic part) is the deviatoric part. 
+The isotropic tensor is the same in all directions. It is a scalar multiple of the identity tensor. The remaining part of the tensor (after we subtract away the isotropic part) is the deviatoric part. 
 <hr>
 
 <span class="remark-fancy">Remark.</span>
@@ -195,7 +194,7 @@ The deviatoric part of a tensor is a zero-trace tensor.
 </table>
 </div>
 
-The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a vicous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fact, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). 
+The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a viscous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fact, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). 
 
 There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
 
@@ -374,4 +373,4 @@ The incompressible Navier-Stokes equations can be written in terms of the kinema
 </table>
 </div>
 
-Often, we move $1/\rho$ into the pressure gradient term, and define a new pressure $p = P/\rho$. This new pressure is sometimes called the *kinematic pressure* (it's just a scalar multiple of the mechanical pressure). Therefore, the kinematic flavour of the Navier-Stokes equations describe the relationship between velocity and kinematic pressure, with a single fluid property $\nu$ (the kinematic viscosity).
+Often, we move $1/\rho$ into the pressure gradient term, and define a new pressure $p \equiv P/\rho$. This new pressure is sometimes called the *kinematic pressure* (it's just a scalar multiple of the mechanical pressure). Therefore, the kinematic flavour of the Navier-Stokes equations describe the relationship between velocity and kinematic pressure, with a single fluid property $\nu$ (the kinematic viscosity).
