@@ -40,30 +40,30 @@ Basic tensor notation showing vectors, velocity, matrices, and the identity matr
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
-<th style="text-align: center; border-bottom: 1px solid black;">Vector (rank 1 tensor)</th>
-<th style="text-align: center; border-bottom: 1px solid black;">Velocity vector</th>
-<th style="text-align: center; border-bottom: 1px solid black;">Matrix (rank 2 tensor)</th>
-<th style="text-align: center; border-bottom: 1px solid black;">Identity matrix</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Vector (rank 1 tensor)</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Velocity vector</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Matrix (rank 2 tensor)</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Identity matrix</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \vec{a}$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \vec{V}$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle A$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle I$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{V}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle A$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle I$</td>
 </tr>
 <tr>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle a_i$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle v_i$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle A_{ij}$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \delta_{ij}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle v_i$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle A_{ij}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \delta_{ij}$</td>
 </tr>
 <tr>
-<td style="text-align: center">$\displaystyle \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$</td>
-<td style="text-align: center">$\displaystyle \begin{bmatrix} u \\ v \\ w \end{bmatrix}$</td>
-<td style="text-align: center">$\displaystyle \begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$</td>
-<td style="text-align: center">$\displaystyle \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} u \\ v \\ w \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$</td>
 </tr>
 </tbody>
 </table>
@@ -78,26 +78,26 @@ Common vector operations including dot product, divergence, and vector-matrix mu
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
-<th style="text-align: center; border-bottom: 1px solid black;">Dot product</th>
-<th style="text-align: center; border-bottom: 1px solid black;">Divergence of a vector</th>
-<th style="text-align: center; border-bottom: 1px solid black;">Vector-matrix product</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Dot product</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Divergence of a vector</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Vector-matrix product</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \vec{a}\cdot \vec{b}$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \vec{\nabla}\cdot \vec{a}$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \vec{a}\cdot B$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\cdot \vec{b}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{\nabla}\cdot \vec{a}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\cdot B$</td>
 </tr>
 <tr>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle a_i b_i$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle \frac{\partial a_i}{\partial x_i}$</td>
-<td style="text-align: center; border-bottom: 1px solid black;">$\displaystyle a_i B_{ij}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i b_i$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial a_i}{\partial x_i}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i B_{ij}$</td>
 </tr>
 <tr>
-<td style="text-align: center">$\displaystyle a_x b_x + a_y b_y + a_z b_z$</td>
-<td style="text-align: center">$\displaystyle \frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$</td>
-<td style="text-align: center">$\displaystyle \begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle a_x b_x + a_y b_y + a_z b_z$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$</td>
 </tr>
 </tbody>
 </table>
