@@ -15,8 +15,9 @@ The Rosetta stone is an important rock that helped us [understand Egyptian hiero
 In this post, I will give several important equations in fluid mechanics in three forms: vector calculus notation, Einstein notation, and with the Cartesian components written out. I start with the more general Cauchy equation and explain when we make certain assumptions to get the compressible and incompressible Navier-Stokes equations.
 
 The general roadmap is:
-1: Define: tensors, operations, material derivative, stress tensor, viscous stress tensor.
-2: Continuity equation: compressible, then incompressible ($\rho$ is constant).
+
+1. Define: tensors, operations, material derivative, stress tensor, viscous stress tensor.
+2. Continuity equation: compressible, then incompressible ($\rho$ is constant).
 3. Momentum equation: 
     1. Cauchy's momentum equation for a general continuum,
     2. Expand it in terms of isotropic/deviatoric stresses.
