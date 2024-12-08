@@ -209,8 +209,6 @@ References I used to compile this post:
 </tbody>
 </table>
 
-### Compressible continuity equation
-
 <table>
 <thead>
 <tr>
@@ -230,153 +228,115 @@ References I used to compile this post:
 </tbody>
 </table>
 
-### Incompressible continuity equation
-
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Incompressible continuity equation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \vec{\nabla} \cdot \vec{V} = 0$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \frac{\partial v_j}{\partial x_j} = 0$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z} = 0$</td>
 </tr>
 </tbody>
 </table>
 
-### Cauchy's equation
-
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Cauchy's equation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \frac{\partial (\rho \vec{V})}{\partial t} + \vec{\nabla} \cdot (\rho \vec{V} \vec{V}) = \rho \vec{g} + \vec{\nabla} \cdot \sigma$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \frac{\partial (\rho v_j)}{\partial t} + \frac{\partial }{\partial x_i}(\rho v_j v_i) = \rho g_j + \frac{\partial \sigma_{ij}}{\partial x_i}$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \begin{aligned} \frac{\partial(\rho u)}{\partial t} + \frac{\partial(\rho uu)}{\partial x} + \frac{\partial (\rho uv)}{\partial y} + \frac{\partial (\rho uw)}{\partial z} &= \rho g_x + \frac{\partial \sigma_{xx}}{\partial x} + \frac{\sigma_{yx}}{\partial y} + \frac{\sigma_{zx}}{\partial z} \\\\ \frac{\partial (\rho v)}{\partial t } + \frac{\partial (\rho u v)}{\partial x } + \frac{\partial (\rho v v)}{\partial y} + \frac{\partial (\rho v w)}{\partial z} &= \rho g_y + \frac{\partial \sigma_{xy}}{\partial x} + \frac{\sigma_{yy}}{\partial y} + \frac{\sigma_{zy}}{\partial z} \\\\ \frac{\partial (\rho w)}{\partial t} + \frac{\partial (\rho u w)}{\partial x} + \frac{\partial(\rho v w)}{\partial y} + \frac{\partial (\rho w w)}{\partial z} &= \rho g_z + \frac{\partial \sigma_{xz}}{\partial x} + \frac{\sigma_{yz}}{\partial y} + \frac{\sigma_{zz}}{\partial z} \end{aligned}$</td>
 </tr>
 </tbody>
 </table>
 
-### Cauchy's equation - expanded
-
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Cauchy's equation - expanded</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \rho(\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \vec{\nabla} \cdot \tau + \rho \vec{g}$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \rho (\frac{\partial v_j}{\partial t} +v_i \frac{\partial v_j}{\partial x_i}) = -\frac{\partial P}{\partial x_j} + \frac{\partial \tau_{ij}}{\partial x_i} + \rho g_j$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \begin{aligned} \rho (\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z})&= - \frac{\partial P}{\partial x} + \frac{\partial \tau_{xx}}{\partial x}+ \frac{\partial \tau_{yx}}{\partial y}+ \frac{\partial \tau_{zx}}{\partial z} + \rho g_x \\\\ \rho (\frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z})&= - \frac{\partial P}{\partial y} + \frac{\partial \tau_{xy}}{\partial x}+ \frac{\partial \tau_{yy}}{\partial y}+ \frac{\partial \tau_{zy}}{\partial z} + \rho g_y \\\\ \rho (\frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z})&= - \frac{\partial P}{\partial z} + \frac{\partial \tau_{xz}}{\partial x}+ \frac{\partial \tau_{yz}}{\partial y}+ \frac{\partial \tau_{zz}}{\partial z} + \rho g_z \end{aligned}$</td>
 </tr>
 </tbody>
 </table>
 
-### Compressible Navier-Stokes equations
-Assuming $\mu$ is constant, and a Newtonian fluid, we get the compressible Navier-Stokes equations:
-
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Compressible Navier-Stokes equations</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \rho (\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \tfrac{1}{3}\mu \vec{\nabla}(\vec{\nabla}\cdot\vec{V}) + \rho \vec{g}$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \rho (\frac{\partial v_j}{\partial t} +v_i \frac{\partial v_j}{\partial x_i}) = - \frac{\partial P}{\partial x_j} + \mu \frac{\partial^2v_j}{\partial x_i \partial x_i} + \frac{1}{3}\mu \frac{\partial^2 v_i}{\partial x_j \partial x_i} + \rho g_j$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \begin{aligned} \rho(\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}) &= - \frac{\partial P}{\partial x} + \mu \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2} \right) + \frac{1}{3}\mu \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 v}{\partial x \partial y} + \frac{\partial^2 w}{\partial x \partial z}\right) + \rho g_x \\\\ \rho(\frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z}) &= - \frac{\partial P}{\partial y} + \mu \left( \frac{\partial^2 v}{\partial x^2} +\frac{\partial^2 v}{\partial y^2} +\frac{\partial^2 v}{\partial z^2} \right) + \frac{1}{3}\mu \left( \frac{\partial^2 u}{\partial y\partial x} + \frac{\partial^2 v}{\partial y^2} + \frac{\partial^2 w}{\partial y \partial z}\right) + \rho g_y \\\\ \rho(\frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}) &= - \frac{\partial P}{\partial z} + \mu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2} \right) + \frac{1}{3}\mu \left( \frac{\partial^2 u}{\partial z \partial x} + \frac{\partial^2 v}{\partial z \partial y} + \frac{\partial^2 w}{\partial z^2}\right) + \rho g_z \end{aligned}$</td>
 </tr>
 </tbody>
 </table>
 
-### Incompressible Navier-Stokes equations
-Assuming $\mu$ is constant, $\rho$ is constant, and a Newtonian fluid, we get the incompressible Navier-Stokes equations:
-
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Incompressible Navier-Stokes equations</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \rho (\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \rho \vec{g}$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \rho (\frac{\partial v_j}{\partial t} +v_i \frac{\partial v_j}{\partial x_i}) = - \frac{\partial P}{\partial x_j} + \mu \frac{\partial^2v_j}{\partial x_i \partial x_i} + \rho g_j$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \begin{aligned} \rho{\left(\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}\right)} &= - \frac{\partial P}{\partial x} + \mu \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2} \right) + \rho g_x \\\\ \rho{\left(\frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z}\right)} &= - \frac{\partial P}{\partial y} + \mu \left( \frac{\partial^2 v}{\partial x^2} +\frac{\partial^2 v}{\partial y^2} +\frac{\partial^2 v}{\partial z^2} \right) + \rho g_y \\\\ \rho{\left(\frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}\right)} &= - \frac{\partial P}{\partial z} + \mu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2} \right) + \rho g_z \end{aligned}$</td>
 </tr>
 </tbody>
 </table>
 
-We can also write the incompressible Navier-Stokes equations in terms of kinematic viscosity $\nu = \mu/\rho$:
-
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Incompressible Navier-Stokes equations with kinematic viscosity</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V} = - \frac{1}{\rho}\vec{\nabla} P + \nu \nabla^2 \vec{V} + \vec{g}$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \frac{\partial v_j}{\partial t} +v_i \frac{\partial v_j}{\partial x_i} = - \frac{1}{\rho}\frac{\partial P}{\partial x_j} + \nu \frac{\partial^2v_j}{\partial x_i \partial x_i} + g_j$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \begin{aligned} \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} &= - \frac{1}{\rho}\frac{\partial P}{\partial x} + \nu \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2} \right) + g_x \\\\ \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z} &= - \frac{1}{\rho}\frac{\partial P}{\partial y} + \nu \left( \frac{\partial^2 v}{\partial x^2} +\frac{\partial^2 v}{\partial y^2} +\frac{\partial^2 v}{\partial z^2} \right) + g_y \\\\ \frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z} &= - \frac{1}{\rho}\frac{\partial P}{\partial z} + \nu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2} \right) + g_z \end{aligned}$</td>
 </tr>
 </tbody>
