@@ -34,7 +34,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Tensors</span>
+<span class="ballet-fancy">Tensors</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -68,7 +68,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Operations</span>
+<span class="ballet-fancy">Operations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -98,7 +98,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">More operations</span>
+<span class="ballet-fancy">More operations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -128,7 +128,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Material derivative</span>
+<span class="ballet-fancy">Material derivative</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -148,7 +148,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">The stress tensor, which has isotropic and deviatoric components</span>
+<span class="ballet-fancy">The stress tensor, which has isotropic and deviatoric components</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -167,7 +167,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">The viscous stress tensor</span>
+<span class="ballet-fancy">The viscous stress tensor</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -187,7 +187,7 @@ References I used to compile this post:
 ## Conservation of mass - the continuity equation
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Compressible continuity equation</span>
+<span class="ballet-fancy">Compressible continuity equation</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -206,7 +206,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Incompressible continuity equation</span>
+<span class="ballet-fancy">Incompressible continuity equation</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -227,7 +227,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Cauchy's equation</span>
+<span class="ballet-fancy">Cauchy's equation</span>
 Conservation of momentum for a general continuum
 </div>
 <table style="flex: 1; border-collapse: collapse;">
@@ -247,7 +247,7 @@ Conservation of momentum for a general continuum
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Cauchy's equation</span> with pressure (isotropic) and viscous (deviatoric) stress terms shown explicitly
+<span class="ballet-fancy">Cauchy's equation</span> with pressure (isotropic) and viscous (deviatoric) stress terms shown explicitly
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -268,7 +268,7 @@ Conservation of momentum for a general continuum
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Compressible Navier-Stokes Equations</span>
+<span class="ballet-fancy">Compressible Navier-Stokes Equations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -289,7 +289,7 @@ Conservation of momentum for a general continuum
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Incompressible Navier-Stokes Equations</span>
+<span class="ballet-fancy">Incompressible Navier-Stokes Equations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -308,7 +308,7 @@ Conservation of momentum for a general continuum
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="lavishly-yours-regular">Incompressible Navier-Stokes Equations (kinematic units)</span>
+<span class="ballet-fancy">Incompressible Navier-Stokes Equations (kinematic units)</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
