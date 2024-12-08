@@ -25,9 +25,9 @@ References I used to compile this post:
 | Type | Vector calculus notation | Einstein notation | Cartesian components |
 |:---:|:---:|:---:|:---:|
 | Vector (rank 1 tensor) | $\vec{a}$ | $a_i$ | $\begin{bmatrix} a_x \\\\ a_y \\\\ a_z \end{bmatrix}$ |
-| Velocity vector | $\vec{V}$ | $v_i$ | $\begin{bmatrix} u \\ v \\ w \end{bmatrix}$ |
-| Matrix (rank 2 tensor) | $A$ | $A_{ij}$ | $\begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$ |
-| Identity matrix | $I$ | $\delta_{ij}$ | $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$ |
+| Velocity vector | $\vec{V}$ | $v_i$ | $\begin{bmatrix} u \\\\ v \\\\ w \end{bmatrix}$ |
+| Matrix (rank 2 tensor) | $A$ | $A_{ij}$ | $\begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\\\ A_{yx} & A_{yy} & A_{yz} \\\\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$ |
+| Identity matrix | $I$ | $\delta_{ij}$ | $\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}$ |
 
 ### Operations
 
@@ -35,10 +35,10 @@ References I used to compile this post:
 |:---:|:---:|:---:|:---:|
 | Dot product | $\vec{a}\cdot \vec{b}$ | $a_i b_i$ | $a_x b_x + a_y b_y + a_z b_z$ |
 | Divergence of a vector | $\vec{\nabla}\cdot \vec{a}$ | $\frac{\partial a_i}{\partial x_i}$ | $\frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$ |
-| Vector-matrix product | $\vec{a}\cdot B$ | $a_i B_{ij}$ | $\begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$ |
-| Divergence of a tensor | $\vec{\nabla}\cdot A$ | $\frac{\partial A_{ij}}{\partial x_i}$ | $\begin{bmatrix} \frac{\partial B_{xx}}{\partial x} + \frac{\partial B_{yx}}{\partial y} + \frac{\partial B_{zx}}{\partial z} \\ \frac{\partial B_{xy}}{\partial x} + \frac{\partial B_{yy}}{\partial y} + \frac{\partial B_{zy}}{\partial z} \\ \frac{\partial B_{xz}}{\partial x} + \frac{\partial B_{yz}}{\partial y} + \frac{\partial B_{zz}}{\partial z} \end{bmatrix}$ |
-| Tensor product or outer product | $\vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$ | $a_i b_j$ | $\begin{bmatrix} a_x b_x & a_x b_y & a_x b_z \\ a_y b_x & a_y b_y & a_y b_z \\ a_z b_x & a_z b_y & a_z b_z \end{bmatrix}$ |
-| Gradient of a vector | $\vec{\nabla} \vec{a}$ | $\frac{\partial a_i}{\partial x_j}$ | $\begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y} & \frac{\partial a_x}{\partial z} \\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z} \\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z} \end{bmatrix}$ |
+| Vector-matrix product | $\vec{a}\cdot B$ | $a_i B_{ij}$ | $\begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\\\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\\\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$ |
+| Divergence of a tensor | $\vec{\nabla}\cdot A$ | $\frac{\partial A_{ij}}{\partial x_i}$ | $\begin{bmatrix} \frac{\partial B_{xx}}{\partial x} + \frac{\partial B_{yx}}{\partial y} + \frac{\partial B_{zx}}{\partial z} \\\\ \frac{\partial B_{xy}}{\partial x} + \frac{\partial B_{yy}}{\partial y} + \frac{\partial B_{zy}}{\partial z} \\\\ \frac{\partial B_{xz}}{\partial x} + \frac{\partial B_{yz}}{\partial y} + \frac{\partial B_{zz}}{\partial z} \end{bmatrix}$ |
+| Tensor product or outer product | $\vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$ | $a_i b_j$ | $\begin{bmatrix} a_x b_x & a_x b_y & a_x b_z \\\\ a_y b_x & a_y b_y & a_y b_z \\\\ a_z b_x & a_z b_y & a_z b_z \end{bmatrix}$ |
+| Gradient of a vector | $\vec{\nabla} \vec{a}$ | $\frac{\partial a_i}{\partial x_j}$ | $\begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y} & \frac{\partial a_x}{\partial z} \\\\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z} \\\\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z} \end{bmatrix}$ |
 
 ## Equations in fluid mechanics
 
@@ -56,14 +56,14 @@ The Cauchy stress tensor is made up of isotropic (hydrostatic) stress, from pres
 
 | Vector calculus notation | Einstein notation | Cartesian components |
 |:---:|:---:|:---:|
-| $\sigma = -P I + \tau$ | $\sigma_{ij}= -P\delta_{ij} + \tau_{ij}$ | $\sigma = -\begin{bmatrix}P & 0 & 0 \\ 0 & P & 0 \\ 0 & 0 & P \end{bmatrix} + \begin{bmatrix}\tau_{xx} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \tau_{yy} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \tau_{zz}\end{bmatrix}$ |
+| $\sigma = -P I + \tau$ | $\sigma_{ij}= -P\delta_{ij} + \tau_{ij}$ | $\sigma = -\begin{bmatrix}P & 0 & 0 \\\\ 0 & P & 0 \\\\ 0 & 0 & P \end{bmatrix} + \begin{bmatrix}\tau_{xx} & \tau_{xy} & \tau_{xz} \\\\ \tau_{yx} & \tau_{yy} & \tau_{yz} \\\\ \tau_{zx} & \tau_{zy} & \tau_{zz}\end{bmatrix}$ |
 
 #### Viscous stress tensor
 This is the constitutive relation describing how shear is converted to a viscous stress. $\zeta$ is the second viscosity or bulk viscosity of the fluid, and is usually assumed to be zero. $\mu$ is the dynamic viscosity. Shown here is a linear relationship (Newtonian fluid).
 
 | Vector calculus notation | Einstein notation | Cartesian components |
 |:---:|:---:|:---:|
-| $\tau = \zeta (\vec{\nabla}\cdot \vec{V})I + \mu [\vec{\nabla}\vec{V} + (\vec{\nabla}\vec{V})^\text{T} - \tfrac{2}{3}(\vec{\nabla} \cdot \vec{V})I ]$ | $\tau_{ij} = \zeta \frac{\partial v_k}{\partial x_k}\delta_{ij} + \mu \left[\frac{\partial v_j}{\partial x_i} + \frac{\partial v_i}{\partial x_j} - \frac{2}{3}\frac{\partial v_k}{\partial x_k} \delta_{ij}\right]$ | $\begin{align*}\tau = &\zeta \begin{bmatrix} \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & 0 & 0 \\ 0 & \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & 0 \\ 0 & 0 & \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) \end{bmatrix} \\ &+ \mu \begin{bmatrix} 2\frac{\partial u}{\partial x} - \frac{2}{3}\left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & \frac{\partial v}{\partial x} + \frac{\partial u}{\partial y} & \frac{\partial w}{\partial x} + \frac{\partial u}{\partial z} \\ \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x} & 2\frac{\partial v}{\partial y} - \frac{2}{3}\left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & \frac{\partial w}{\partial y} + \frac{\partial v}{\partial z} \\ \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x} & \frac{\partial v}{\partial z} + \frac{\partial w}{\partial y} & 2\frac{\partial w}{\partial z} - \frac{2}{3}\left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) \end{bmatrix}\end{align*}$ |
+| $\tau = \zeta (\vec{\nabla}\cdot \vec{V})I + \mu [\vec{\nabla}\vec{V} + (\vec{\nabla}\vec{V})^\text{T} - \tfrac{2}{3}(\vec{\nabla} \cdot \vec{V})I ]$ | $\tau_{ij} = \zeta \frac{\partial v_k}{\partial x_k}\delta_{ij} + \mu \left[\frac{\partial v_j}{\partial x_i} + \frac{\partial v_i}{\partial x_j} - \frac{2}{3}\frac{\partial v_k}{\partial x_k} \delta_{ij}\right]$ | $\begin{align*}\tau = &\zeta \begin{bmatrix} \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & 0 & 0 \\\\ 0 & \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & 0 \\\\ 0 & 0 & \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) \end{bmatrix} \\\\ &+ \mu \begin{bmatrix} 2\frac{\partial u}{\partial x} - \frac{2}{3}\left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & \frac{\partial v}{\partial x} + \frac{\partial u}{\partial y} & \frac{\partial w}{\partial x} + \frac{\partial u}{\partial z} \\\\ \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x} & 2\frac{\partial v}{\partial y} - \frac{2}{3}\left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) & \frac{\partial w}{\partial y} + \frac{\partial v}{\partial z} \\\\ \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x} & \frac{\partial v}{\partial z} + \frac{\partial w}{\partial y} & 2\frac{\partial w}{\partial z} - \frac{2}{3}\left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}\right) \end{bmatrix}\end{align*}$ |
 
 ### Compressible continuity equation
 
