@@ -26,7 +26,6 @@ img {
 } 
 
 .highlight {
-    /* margin-left: 2em; */
     font-size: 13px;
     line-height: 1.3em;
     overflow-x: auto;
@@ -52,8 +51,7 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
-  min-height: 100%;
-  height: auto;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -67,15 +65,13 @@ nav {
   position: relative;
   z-index: 1;
   color: white;
-  min-height: 100%;
-  width: 100%;
-  max-width: none;
+  width: 800px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .post {
   padding: 2em;
-  max-width: 95%;
-  margin: 0 auto;
 }
 
 table {
