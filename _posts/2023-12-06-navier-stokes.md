@@ -6,7 +6,7 @@ description: Several different forms of the Navier-Stokes equations
 tags: fluids education math theory
 toc:
   sidebar: left
-background: /images/rock.jpg
+background: /images/rough-stone-wall-pattern.jpg
 ---
 
 ## Introduction
