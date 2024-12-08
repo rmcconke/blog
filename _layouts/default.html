@@ -2,10 +2,14 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {%- include head.html -%}
 </head>
-<body {% if page.background %}style="background-image: url('{{ page.background }}'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh;"{% endif %}>
-    <div class="content">
-        {%- include nav.html -%}
-        {{ content }}
-    </div>
+<body>
+{% if page.layout == 'post' %}
+  {{ content }}
+{% else %}
+  <div class='content'>
+    {%- include nav.html -%}
+    {{ content }}
+  </div>
+{% endif %}
 </body>
 </html>
