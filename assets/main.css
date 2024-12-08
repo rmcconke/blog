@@ -16,7 +16,7 @@ img {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 100px;
-    max-width: 800px;  /* Changed back from 95% to 800px */
+    max-width: 800px;
     line-height: 1.5;
 }
 
@@ -67,11 +67,13 @@ nav {
   z-index: 1;
   color: white;
   min-height: 100%;
+  width: 100%;
+  max-width: none;
 }
 
 .post {
   padding: 2em;
-  max-width: 95%;  /* Keep blog posts wide */
+  max-width: 95%;
   margin: 0 auto;
 }
 
