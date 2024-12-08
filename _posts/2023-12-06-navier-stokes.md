@@ -156,8 +156,8 @@ The material/total/substantial derivative is an important quantity in continuum 
 
 A *stress tensor* is a rank 2 tensor that gives us the individual stresses on each face of a fluid element. It's convenient to separate this tensor into *pressure* (isotropic) and *viscous* (eventually, this will be deviatoric) components.
 
-<span class="remark-fancy">Remark.</span><hr>
-
+<span class="remark-fancy">Remark.</span>
+<hr>
 *Any* rank 2 tensor (for example, the Cauchy stress tensor) can be decomposed into an *isotropic* tensor and a *deviatoric* tensor:
 
 $$ A_{ij} = A^{iso}_{ij} + A^{dev}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A_{ij} - \frac{1}{3}A_{kk}\delta_{ij}\right) $$
@@ -165,12 +165,10 @@ $$ A_{ij} = A^{iso}_{ij} + A^{dev}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A
 The isotropic tensor is the same in all directions. It is a scalar multiple of the identity tensor. The remaining part of the tensor (after we subtract away the isotropic part) is the deviatoric part. 
 <hr>
 
-<span class="remark-fancy">Remark.</span>
-
-<hr>
-The deviatoric part of a tensor is a zero-trace tensor.
-<hr>
-
+<div class="remark-environment">
+    <span class="ballet-fancy">Remark</span>
+    <p>The deviatoric part of a tensor is a zero-trace tensor.</p>
+</div>
 
 
 
