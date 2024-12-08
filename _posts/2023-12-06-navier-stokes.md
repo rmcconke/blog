@@ -6,7 +6,7 @@ description: Several different forms of the Navier-Stokes equations
 tags: fluids education math theory
 toc:
   sidebar: left
-background: /images/rock.jpg # Add this line
+background: /images/rock.jpg
 ---
 
 ## Introduction
@@ -80,6 +80,11 @@ Operations
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\cdot \vec{b}$</td>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{\nabla}\cdot \vec{a}$</td>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\cdot B$</td>
+</tr>
+<tr>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i b_i$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial a_i}{\partial x_i}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i B_{ij}$</td>
 </tr>
 <tr>
 <td style="text-align: center; padding: 10px;">$\displaystyle a_x b_x + a_y b_y + a_z b_z$</td>
