@@ -68,7 +68,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Operations
+<span class="lavishly-yours-regular">Operations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -98,7 +98,7 @@ Operations
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-More operations
+<span class="lavishly-yours-regular">More operations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -128,7 +128,7 @@ More operations
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Material derivative
+<span class="lavishly-yours-regular">Material derivative</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -148,7 +148,7 @@ Material derivative
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-The stress tensor, which has isotropic and deviatoric components
+<span class="lavishly-yours-regular">The stress tensor, which has isotropic and deviatoric components</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -167,7 +167,7 @@ The stress tensor, which has isotropic and deviatoric components
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-The viscous stress tensor
+<span class="lavishly-yours-regular">The viscous stress tensor</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -187,7 +187,7 @@ The viscous stress tensor
 ## Conservation of mass - the continuity equation
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Compressible continuity equation
+<span class="lavishly-yours-regular">Compressible continuity equation</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -206,7 +206,7 @@ Compressible continuity equation
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Incompressible continuity equation
+<span class="lavishly-yours-regular">Incompressible continuity equation</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -227,7 +227,7 @@ Incompressible continuity equation
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Cauchy's equation
+<span class="lavishly-yours-regular">Cauchy's equation</span>
 Conservation of momentum for a general continuum
 </div>
 <table style="flex: 1; border-collapse: collapse;">
@@ -247,7 +247,7 @@ Conservation of momentum for a general continuum
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Cauchy's equation with pressure (isotropic) and viscous (deviatoric) stress terms shown explicitly
+<span class="lavishly-yours-regular">Cauchy's equation</span> with pressure (isotropic) and viscous (deviatoric) stress terms shown explicitly
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -268,7 +268,7 @@ Cauchy's equation with pressure (isotropic) and viscous (deviatoric) stress term
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Compressible Navier-Stokes equations
+<span class="lavishly-yours-regular">Compressible Navier-Stokes Equations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -289,7 +289,7 @@ Compressible Navier-Stokes equations
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Incompressible Navier-Stokes equations
+<span class="lavishly-yours-regular">Incompressible Navier-Stokes Equations</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -308,7 +308,7 @@ Incompressible Navier-Stokes equations
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Incompressible Navier-Stokes equations (kinematic units)
+<span class="lavishly-yours-regular">Incompressible Navier-Stokes Equations (kinematic units)</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
