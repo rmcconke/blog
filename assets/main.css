@@ -2,6 +2,13 @@ html {
   font-family: sans-serif;
 }
 
+.serif-text {
+  font-family: 'Times New Roman', serif;
+}
+.monospace-text {
+  font-family: 'Courier New', monospace;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
