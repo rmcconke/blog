@@ -84,18 +84,17 @@ Operations
 </table>
 </div>
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-More operations</div>
+More operations
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
+<tbody>
 <tr>
 <th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Divergence of a tensor</th>
 <th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Tensor product or outer product</th>
 <th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Gradient of a vector</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{\nabla}\cdot A$</td>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$</td>
@@ -115,16 +114,11 @@ More operations</div>
 </table>
 </div>
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 Material derivative
 </div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Material derivative of velocity</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{D\vec{V}}{Dt}=\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}$</td>
@@ -140,15 +134,11 @@ Material derivative
 </div>
 
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-The stress sensor, which has isotropic and deviatoric components.</div>
+The stress tensor, which has isotropic and deviatoric components
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Stress tensor</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \sigma = -P I + \tau$</td>
@@ -163,16 +153,11 @@ The stress sensor, which has isotropic and deviatoric components.</div>
 </table>
 </div>
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 The viscous stress tensor
 </div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Viscous stress tensor</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \tau = \zeta (\vec{\nabla}\cdot \vec{V})I + \mu [\vec{\nabla}\vec{V} + (\vec{\nabla}\vec{V})^\text{T} - \tfrac{2}{3}(\vec{\nabla} \cdot \vec{V})I ]$</td>
