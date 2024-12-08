@@ -3,7 +3,7 @@
 {%- include head.html -%}
 </head>
 <body {% if page.background %}style="background-image: url('{{ page.background }}');"{% endif %}>
-<div class='content'>
+<div class='content' {% if page.color %}style="color: {{ page.color }};"{% endif %}>
     {%- include nav.html -%}
     {{ content }}
 </div>
