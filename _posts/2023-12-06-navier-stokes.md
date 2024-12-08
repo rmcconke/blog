@@ -158,7 +158,9 @@ A *stress tensor* is a rank 2 tensor that gives us the individual stresses on ea
 
 <span class="ballet-fancy">Remark</span>
 *Any* rank 2 tensor (for example, the Cauchy stress tensor) can be decomposed into an *isotropic* tensor and a *deviatoric* tensor:
-$$ A_{ij} = A^{\text{iso}}_{ij} + A^{\text{dev}}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A_{ij} - \frac{1}{3}A_{kk}\delta_{ij}\right) $$
+
+$$ A_{ij} = A^{iso}_{ij} + A^{dev}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A_{ij} - \frac{1}{3}A_{kk}\delta_{ij}\right) $$
+
 The isotropic tensor is the same in all directions. It is a scalar multiple of the identity tensor. The remaining part of the tensor (after we substract away the isotropic part) is the deviatoric part. 
 
 
