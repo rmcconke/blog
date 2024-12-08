@@ -64,9 +64,10 @@ nav {
   font-size: 48px;
 }
 
-.ballet-fanc {
+.ballet-fancy {
   font-family: "Ballet", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 2rem;
 }
