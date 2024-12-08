@@ -16,7 +16,7 @@ img {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 100px;
-    max-width: 95%;  /* Uses 95% of the viewport width */
+    max-width: 800px;  /* Changed back from 95% to 800px */
     line-height: 1.5;
 }
 
@@ -71,7 +71,7 @@ nav {
 
 .post {
   padding: 2em;
-  max-width: 800px;
+  max-width: 95%;  /* Keep blog posts wide */
   margin: 0 auto;
 }
 
