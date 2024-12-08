@@ -68,7 +68,7 @@ We typically work with tensors up to rank 2 in fluids. A rank 0 tensor is a scal
 </table>
 </div>
 
-Some operations between tensors are defined, whereas other are not. While the tensors might be the words and letters of fluid mechanics, the operations are the sentence structure, grammar, spelling, and punctuation. An important set of operations involves a tensor and the $\nabla$ operator. If we take the *divergence* of a tensor, we *reduce it's rank by 1*. If we take the gradient of a tensor, we *increase it's rank by 1*. For example, the gradient of a scalar is a vector - it's a vector who's magnitude indicates the rate of change, and the components of the vector indicates the amount of change along each coordinate axis. The *divergence* of rank 0 tensor (scalar) is not defined. The rank of a scalar can't be reduced anymore - we can't have a rank -1 tensor.
+Some operations between tensors are defined, whereas other are not. While the tensors might be the words and letters of fluid mechanics, the operations are the sentence structure, grammar, spelling, and punctuation. An important set of operations involves a tensor and the $\nabla$ operator. If we take the *divergence* of a tensor, we *reduce its rank by 1*. If we take the gradient of a tensor, we *increase its rank by 1*. For example, the gradient of a scalar is a vector - its a vector who's magnitude indicates the rate of change, and the components of the vector indicates the amount of change along each coordinate axis. The *divergence* of rank 0 tensor (scalar) is not defined. The rank of a scalar can't be reduced anymore - we can't have a rank -1 tensor.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -191,7 +191,7 @@ The deviatoric part of a tensor is a zero-trace tensor.
 </table>
 </div>
 
-The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a vicous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fast, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). 
+The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a vicous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fact, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). 
 
 There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
 
@@ -221,7 +221,7 @@ Here, I give the full viscous stress tensor. For most fluids analysis, the bulk 
 
 ## Conservation of mass - the continuity equation
 
-The compressible continuity equation is the more general case - we allow the density $\rho$to change.
+The compressible continuity equation is the more general case - we allow the density $\rho$ to change.
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 <span class="ballet-fancy">Compressible continuity equation</span>
