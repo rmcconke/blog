@@ -33,7 +33,7 @@ References I used to compile this post:
 ## Prerequisites
 
 
-We typically work with tensors up to rank 2 in fluids. A rank 0 tensor is a scalar. A rank 1 tensor is a vector. A rank 2 tensor can be visualized a matrix. A [tensor](https://www.youtube.com/watch?v=aibZkcOsmcE) is a geometric object - the fact that something is a tensor allows us to define how it transforms. It's a physical object. For example, a scalar is independent of the coordinate system - you can't rotate a scalar. But you can rotate a vector or rank 2 tensor.
+We typically work with tensors up to rank 2 in fluids. A rank 0 tensor is a scalar. A rank 1 tensor is a vector. A rank 2 tensor can be visualized as a matrix. A [tensor](https://www.youtube.com/watch?v=aibZkcOsmcE) is a geometric object - the fact that something is a tensor allows us to define how it transforms. It's a physical object. For example, a scalar is independent of the coordinate system - you can't rotate a scalar. But you can rotate a vector or rank 2 tensor.
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 <span class="parisienne-regular">Tensors</span>
