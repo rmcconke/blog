@@ -33,11 +33,40 @@ References I used to compile this post:
 
 ### Tensors
 
-| Notation | Vector (rank 1 tensor) | Velocity vector | Matrix (rank 2 tensor) | Identity matrix |
-|:---:|:---:|:---:|:---:|:---:|
-| Vector calculus notation | $\vec{a}$ | $\vec{V}$ | $A$ | $I$ |
-| Einstein notation | $a_i$ | $v_i$ | $A_{ij}$ | $\delta_{ij}$ |
-| Cartesian components | $\begin{bmatrix} a_x \\\\ a_y \\\\ a_z \end{bmatrix}$ | $\begin{bmatrix} u \\\\ v \\\\ w \end{bmatrix}$ | $\begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\\\ A_{yx} & A_{yy} & A_{yz} \\\\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$ | $\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}$ |
+<table>
+<thead>
+<tr>
+<th>Notation</th>
+<th>Vector (rank 1 tensor)</th>
+<th>Velocity vector</th>
+<th>Matrix (rank 2 tensor)</th>
+<th>Identity matrix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector calculus notation</td>
+<td>$\displaystyle \vec{a}$</td>
+<td>$\displaystyle \vec{V}$</td>
+<td>$\displaystyle A$</td>
+<td>$\displaystyle I$</td>
+</tr>
+<tr>
+<td>Einstein notation</td>
+<td>$\displaystyle a_i$</td>
+<td>$\displaystyle v_i$</td>
+<td>$\displaystyle A_{ij}$</td>
+<td>$\displaystyle \delta_{ij}$</td>
+</tr>
+<tr>
+<td>Cartesian components</td>
+<td>$\displaystyle \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} u \\ v \\ w \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$</td>
+<td>$\displaystyle \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$</td>
+</tr>
+</tbody>
+</table>
 
 ### Operations (Part 1)
 
