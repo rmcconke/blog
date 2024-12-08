@@ -186,16 +186,16 @@ $$ A_{ij} = A^{iso}_{ij} + A^{dev}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A
 The isotropic tensor is the same in all directions. It is a scalar multiple of the identity tensor. The remaining part of the tensor (after we subtract away the isotropic part) is the deviatoric part.
 <hr class="remark-end">
 
-The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a viscous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fact, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here])(https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). 
+The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a viscous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fact, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15)). 
 
-There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
+There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15)). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
 
 <div class="remark-environment">
     <span class="ballet-fancy">Remark.</span>
     <p>The part of the viscous stress tensor related to bulk viscosity is an isotropic tensor.</p>
 </div>
 
-Here, I give the full viscous stress tensor. For most fluids analysis, the bulk viscosity is negligible, so we typically only consider the second (deviatoric) part, making the viscous stress tensor a deviatoric tensor.
+Here, I give the full viscous stress tensor. For most fluids analysis, the bulk viscosity is negligible, so we typically only consider the second (deviatoric) part.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -215,6 +215,13 @@ Here, I give the full viscous stress tensor. For most fluids analysis, the bulk 
 </tbody>
 </table>
 </div>
+
+<hr class="remark-start">
+<span class="ballet-fancy">Remark</span>
+
+For most fluids, the viscous stress tensor is deviatoric.
+<hr class="remark-end">
+
 
 ## Conservation of mass - the continuity equation
 
