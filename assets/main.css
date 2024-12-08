@@ -98,18 +98,22 @@ a:hover {
 }
 
 .remark-environment {
-    text-align: left;
+    text-align: right;
     margin: 40px 0;
     position: relative;
+    overflow: visible;
+    z-index: 1;
 }
 
 .remark-environment:before,
 .remark-environment:after {
     content: '';
     display: block;
-    height: 1px;
+    height: 6px;
     width: 100%;
-    background: linear-gradient(to right, transparent, #666, transparent);
+    /* Simple gradient fade from right to left */
+    background: linear-gradient(to left, #666, transparent);
+    z-index: -1;
 }
 
 .remark-environment:before {
