@@ -131,19 +131,9 @@ a:hover {
     margin: 20px 0;
 }
 
-/* Create a container for remark content */
-.remark-start ~ *:not(.remark-end) {
+/* Only right-align elements between remark-start and remark-end */
+.remark-start ~ :not(.remark-end) ~ .remark-end {
     text-align: right;
-}
-
-/* Reset alignment after remark-end */
-.remark-end ~ * {
-    text-align: initial;
-}
-
-/* Ensure the next remark-start resets any previous styling */
-.remark-start {
-    clear: both;
 }
 
 .remark-content {
