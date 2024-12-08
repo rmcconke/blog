@@ -177,7 +177,7 @@ A *stress tensor* is a rank 2 tensor that gives us the individual stresses on ea
 
 
 <hr class="remark-start">
-<span class="ballet-fancy">Remark</span>
+<span class="ballet-fancy">Remark.</span>
 
 *Any* rank 2 tensor (for example, the Cauchy stress tensor) can be decomposed into an *isotropic* tensor and a *deviatoric* tensor:
 
@@ -191,7 +191,7 @@ The *viscous stress tensor* is a rank 2 tensor that gives us the individual visc
 There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15)). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
 
 <hr class="remark-start">
-<span class="ballet-fancy">Remark</span>
+<span class="ballet-fancy">Remark.</span>
 
 The part of the viscous stress tensor related to bulk viscosity is an isotropic tensor.
 <hr class="remark-end">
