@@ -31,11 +31,9 @@ References I used to compile this post:
 
 ## Prerequisites
 
-### Tensors
-
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-Basic tensor notation showing vectors, velocity, matrices, and the identity matrix.
+Tensors
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
@@ -69,11 +67,9 @@ Basic tensor notation showing vectors, velocity, matrices, and the identity matr
 </table>
 </div>
 
-### Basic Operations
-
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-Common vector operations including dot product, divergence, and vector-matrix multiplication.
+Operations
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
@@ -103,12 +99,9 @@ Common vector operations including dot product, divergence, and vector-matrix mu
 </table>
 </div>
 
-### Operations (Part 2)
-
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-Common vector operations including divergence of a tensor, tensor product, and gradient of a vector.
-</div>
+More operations</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
@@ -137,11 +130,9 @@ Common vector operations including divergence of a tensor, tensor product, and g
 </table>
 </div>
 
-### Material Derivative
-
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The material derivative represents the total rate of change following a fluid particle.
+Material derivative
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
@@ -163,12 +154,10 @@ The material derivative represents the total rate of change following a fluid pa
 </table>
 </div>
 
-### Stress Tensor
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The stress tensor decomposed into pressure and viscous stress components.
-</div>
+The stress sensor, which has isotropic and deviatoric components.</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
@@ -189,11 +178,9 @@ The stress tensor decomposed into pressure and viscous stress components.
 </table>
 </div>
 
-### Viscous Stress Tensor
-
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The viscous stress tensor for a Newtonian fluid with bulk viscosity ζ and dynamic viscosity μ.
+The viscous stress tensor
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
@@ -215,12 +202,9 @@ The viscous stress tensor for a Newtonian fluid with bulk viscosity ζ and dynam
 </table>
 </div>
 
-### Compressible Continuity Equation
-
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The continuity equation for compressible flow expressing conservation of mass.
-</div>
+Compressible continuity equation</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
@@ -241,12 +225,10 @@ The continuity equation for compressible flow expressing conservation of mass.
 </table>
 </div>
 
-### Incompressible Continuity Equation
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The continuity equation simplified for incompressible flow where density is constant.
-</div>
+Incompressible continuity equation</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
@@ -267,11 +249,11 @@ The continuity equation simplified for incompressible flow where density is cons
 </table>
 </div>
 
-### Cauchy's Equation
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The general momentum equation for a continuous medium, before applying any constitutive relations.
+Cauchy's equation
+Conservation of momentum for a general continuum
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
@@ -297,7 +279,7 @@ The general momentum equation for a continuous medium, before applying any const
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The momentum equation with pressure and viscous stress terms shown explicitly.
+Cauchy's equation with pressure (isotropic)and viscous (deviatoric) stress terms shown explicitly.
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
@@ -323,8 +305,7 @@ The momentum equation with pressure and viscous stress terms shown explicitly.
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The Navier-Stokes equations for compressible flow, assuming constant viscosity and Newtonian fluid behavior.
-</div>
+Compressible Navier-Stokes equations</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
@@ -349,8 +330,7 @@ The Navier-Stokes equations for compressible flow, assuming constant viscosity a
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The Navier-Stokes equations simplified for incompressible flow with constant density and viscosity.
-</div>
+Incompressible Navier-Stokes equations</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
@@ -373,8 +353,7 @@ The Navier-Stokes equations simplified for incompressible flow with constant den
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
-The incompressible Navier-Stokes equations written using kinematic viscosity ν = μ/ρ, commonly used in dimensionless analysis.
-</div>
+Incompressible Navier-Stokes equations (kinematic units)</div>
 <table style="flex: 1; border-collapse: collapse;">
 <thead>
 <tr>
