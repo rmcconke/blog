@@ -132,8 +132,12 @@ a:hover {
 }
 
 /* Only right-align elements between remark-start and remark-end */
-.remark-start ~ :not(.remark-end) ~ .remark-end {
+.remark-start ~ * {
     text-align: right;
+}
+
+.remark-end ~ * {
+    text-align: initial;
 }
 
 .remark-content {
