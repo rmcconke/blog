@@ -50,6 +50,12 @@ Tensors
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle I$</td>
 </tr>
 <tr>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle v_i$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle A_{ij}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \delta_{ij}$</td>
+</tr>
+<tr>
 <td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$</td>
 <td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} u \\ v \\ w \end{bmatrix}$</td>
 <td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$</td>
@@ -172,15 +178,12 @@ The viscous stress tensor
 </table>
 </div>
 
-<div style="display: flex; align-items: center;">
+## Conservation of mass - the continuity equation
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Compressible continuity equation</div>
+Compressible continuity equation
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Compressible continuity equation</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial \rho}{\partial t} + \vec{\nabla} \cdot (\rho \vec{V}) = 0$</td>
@@ -195,16 +198,11 @@ Compressible continuity equation</div>
 </table>
 </div>
 
-
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Incompressible continuity equation</div>
+Incompressible continuity equation
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Incompressible continuity equation</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{\nabla} \cdot \vec{V} = 0$</td>
@@ -219,18 +217,14 @@ Incompressible continuity equation</div>
 </table>
 </div>
 
+## Conservation of momentum
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 Cauchy's equation
 Conservation of momentum for a general continuum
 </div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Cauchy's equation</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial (\rho \vec{V})}{\partial t} + \vec{\nabla} \cdot (\rho \vec{V} \vec{V}) = \rho \vec{g} + \vec{\nabla} \cdot \sigma$</td>
@@ -245,18 +239,11 @@ Conservation of momentum for a general continuum
 </table>
 </div>
 
-### Cauchy's equation - expanded
-
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Cauchy's equation with pressure (isotropic)and viscous (deviatoric) stress terms shown explicitly.
+Cauchy's equation with pressure (isotropic) and viscous (deviatoric) stress terms shown explicitly
 </div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Cauchy's equation - expanded</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \rho(\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \vec{\nabla} \cdot \tau + \rho \vec{g}$</td>
@@ -273,15 +260,11 @@ Cauchy's equation with pressure (isotropic)and viscous (deviatoric) stress terms
 
 ### Compressible Navier-Stokes equations
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Compressible Navier-Stokes equations</div>
+Compressible Navier-Stokes equations
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Compressible Navier-Stokes equations</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \rho (\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \tfrac{1}{3}\mu \vec{\nabla}(\vec{\nabla}\cdot\vec{V}) + \rho \vec{g}$</td>
@@ -298,15 +281,11 @@ Compressible Navier-Stokes equations</div>
 
 ### Incompressible Navier-Stokes equations
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Incompressible Navier-Stokes equations</div>
+Incompressible Navier-Stokes equations
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Incompressible Navier-Stokes equations</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \rho (\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \rho \vec{g}$</td>
@@ -321,15 +300,11 @@ Incompressible Navier-Stokes equations</div>
 </table>
 </div>
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Incompressible Navier-Stokes equations (kinematic units)</div>
+Incompressible Navier-Stokes equations (kinematic units)
+</div>
 <table style="flex: 1; border-collapse: collapse;">
-<thead>
-<tr>
-<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Incompressible Navier-Stokes equations (kinematic form)</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V} = - \frac{1}{\rho}\vec{\nabla} P + \nu \nabla^2 \vec{V} + \vec{g}$</td>
