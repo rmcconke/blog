@@ -2,10 +2,12 @@
 layout: default
 ---
 <article {% if page.background %}style="background-image: url('{{ page.background }}'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; padding: 20px;"{% endif %}>
-  <h1>{{ page.title }}</h1>
-  <p>Published {{ page.date |  date: '%F' }}</p>
-  <hr>
-  {{ content }}
-  <hr>
-  {% bibliography --cited %}
+  <div class="content">
+    <h1>{{ page.title }}</h1>
+    <p>Published {{ page.date |  date: '%F' }}</p>
+    <hr>
+    {{ content }}
+    <hr>
+    {% bibliography --cited %}
+  </div>
 </article>
