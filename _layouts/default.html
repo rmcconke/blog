@@ -3,13 +3,9 @@
 {%- include head.html -%}
 </head>
 <body>
-{% if page.layout == 'post' %}
-  {{ content }}
-{% else %}
-  <div class='content'>
+<div class='content'>
     {%- include nav.html -%}
     {{ content }}
-  </div>
-{% endif %}
+</div>
 </body>
 </html>
