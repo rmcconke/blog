@@ -34,7 +34,7 @@ References I used to compile this post:
 ### Tensors
 
 <div style="display: flex; align-items: center;">
-<div style="flex: 0 0 200px;">
+<div style="flex: 0 0 200px; text-align: center;">
 Basic tensor notation showing vectors, velocity, matrices, and the identity matrix.
 </div>
 <table style="flex: 1;">
