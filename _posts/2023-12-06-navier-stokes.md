@@ -32,6 +32,8 @@ References I used to compile this post:
 
 ## Prerequisites
 
+
+We typically work with tensors up to rank 2 in fluids. A rank 0 tensor is a scalar. A rank 1 tensor is a vector. A rank 2 tensor can be visualized a matrix. A [tensor](https://www.youtube.com/watch?v=aibZkcOsmcE) is a geometric object - the fact that something is a tensor allows us to define how it transforms. It's a physical object. For example, a scalar is independent of the coordinate system - you can't rotate a scalar. But you can rotate a vector or rank 2 tensor.
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 <span class="ballet-fancy">Tensors</span>
@@ -65,6 +67,8 @@ References I used to compile this post:
 </tbody>
 </table>
 </div>
+
+Some operations between tensors are defined, whereas other are not. While the tensors might be the words and letters of fluid mechanics, the operations are the sentence structure, grammar, spelling, and punctuation. An important set of operations involves a tensor and the $\nabla$ operator. If we take the *divergence* of a tensor, we *reduce it's rank by 1*. If we take the gradient of a tensor, we *increase it's rank by 1*. For example, the gradient of a scalar is a vector - it's a vector who's magnitude indicates the rate of change, and the components of the vector indicates the amount of change along each coordinate axis. The *divergence* of rank 0 tensor (scalar) is not defined. The rank of a scalar can't be reduced anymore - we can't have a rank -1 tensor.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -103,7 +107,7 @@ References I used to compile this post:
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
 <tr>
-<th style="text-align: center; border-bottom: 1px solid white; padding: 10px;">Divergence of a tensor</th>
+<th style="text-align: center; border-bottom: 1px solid white; padding: 10px;">Divergence of a rank 2 tensor</th>
 <th style="text-align: center; border-bottom: 1px solid white; padding: 10px;">Tensor product or outer product</th>
 <th style="text-align: center; border-bottom: 1px solid white; padding: 10px;">Gradient of a vector</th>
 </tr>
@@ -126,6 +130,11 @@ References I used to compile this post:
 </table>
 </div>
 
+
+
+
+
+The material/total/substantial derivative is an important quantity in continuum mechanics. It is denoted with a capital $D$ (the usual derivative is a lowercase $d$). It is the rate of change of a quantity per unit time in a frame of reference that moves with the fluid (Lagrangian perspective). It says that when we follow a chunk of fluid (i.e. Lagrangian perspective) ,the total time rate of change equals the local time rate of change of the Eulerian field, plus the spatial rate of change multiplied by how fast we're moving through space. For more details about the material derivative, see my [lecture on the material derivative](https://www.youtube.com/watch?v=g_7_hP3yX_8).
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 <span class="ballet-fancy">Material derivative</span>
@@ -145,10 +154,25 @@ References I used to compile this post:
 </table>
 </div>
 
+A *stress tensor* is a rank 2 tensor that gives us the individual stresses on each face of a fluid element. It's convenient to separate this tensor into *pressure* (isotropic) and *viscous* (eventually, this will be deviatoric) components.
+
+<span class="ballet-fancy">Remark</span>
+*Any* rank 2 tensor (for example, the Cauchy stress tensor) can be decomposed into an *isotropic* tensor and a *deviatoric* tensor:
+$$ A_{ij} = A^{\text{iso}}_{ij} + A^{\text{dev}}_{ij} = \frac{1}{3}A_{kk}\delta_{ij} + \left(A_{ij} - \frac{1}{3}A_{kk}\delta_{ij}\right) $$
+The isotropic tensor is the same in all directions. It is a scalar multiple of the identity tensor. The remaining part of the tensor (after we substract away the isotropic part) is the deviatoric part. 
+
+
+<span class="ballet-fancy">Remark</span>
+The deviatoric part of a tensor is a zero-trace tensor.
+
+
+
+
+
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-<span class="ballet-fancy">The stress tensor, which has isotropic and deviatoric components</span>
+<span class="ballet-fancy">Stress Tensor</span>, decomposed into isotropic and deviatoric parts
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>
@@ -164,6 +188,15 @@ References I used to compile this post:
 </tbody>
 </table>
 </div>
+
+The *viscous stress tensor* is a rank 2 tensor that gives us the individual viscous stresses on each face of a fluid element. Viscous stresses are created due to velocity gradients - if a certain part of the fluid is moving faster than another part, then a vicous stress which slows the faster part and speeds up the slower part will be created. *Viscosity* is a fluid property that tells us how much viscous stress is created by a velocity gradient. In fast, there are two types of viscosity - *bulk viscosity* $\zeta$ and *dynamic viscosity* $\mu$. Bulk viscosity is related to the rate of change of volume: notice that the diagonals give the volumetric strain rate ([lecture here](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). 
+
+There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
+
+<span class="ballet-fancy">Remark</span>
+The part of the viscous stress tensor related to bulk viscosity is an isotropic tensor. 
+
+Here, I give the full viscous stress tensor. For most fluids analysis, the bulk viscosity is negligible, so we typically only consider the second (deviatoric) part, making the viscous stress tensor a deviatoric tensor.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -185,6 +218,8 @@ References I used to compile this post:
 </div>
 
 ## Conservation of mass - the continuity equation
+
+The compressible continuity equation is the more general case - we allow the density $\rho$to change.
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 <span class="ballet-fancy">Compressible continuity equation</span>
@@ -203,6 +238,8 @@ References I used to compile this post:
 </tbody>
 </table>
 </div>
+
+If we take density $\rho$ to be constant (physically, we can't actually compress the fluid), then we get the incompressible continuity equation.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -265,6 +302,7 @@ Conservation of momentum for a general continuum
 </div>
 
 ### Compressible Navier-Stokes equations
+If we substitute our stress tensor into Cauchy's equation, we get the compressible Navier-Stokes equations.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -286,6 +324,7 @@ Conservation of momentum for a general continuum
 </div>
 
 ### Incompressible Navier-Stokes equations
+If we again take density $\rho$ to be constant, then we get the incompressible Navier-Stokes equations.
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
@@ -306,6 +345,8 @@ Conservation of momentum for a general continuum
 </table>
 </div>
 
+The incompressible Navier-Stokes equations can be written in terms of the kinematic viscosity $\nu = \frac{\mu}{\rho}$. If we divide the Navier-Stokes equations by $\rho$, we get the following.
+
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
 <span class="ballet-fancy">Incompressible Navier-Stokes Equations (kinematic units)</span>
@@ -324,3 +365,5 @@ Conservation of momentum for a general continuum
 </tbody>
 </table>
 </div>
+
+Often, we move $1/\rho$ into the pressure gradient term, and define a new pressure $p = P/\rho$. This new pressure is sometimes called the *kinematic pressure* (it's just a scalar multiple of the mechanical pressure). Therefore, the kinematic flavour of the Navier-Stokes equations describe the relationship between velocity and kinematic pressure, with a single fluid property $\nu$ (the kinematic viscosity).
