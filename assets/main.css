@@ -109,7 +109,7 @@ a:hover {
 .remark-environment:after {
     content: '';
     display: block;
-    height: 6px;
+    height: 2px;
     width: 100%;
     /* Simple gradient fade from right to left */
     background: linear-gradient(to left, #666, transparent);
