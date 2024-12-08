@@ -24,7 +24,7 @@ References I used to compile this post:
 
 | Type | Vector calculus notation | Einstein notation | Cartesian components |
 |:---:|:---:|:---:|:---:|
-| Vector (rank 1 tensor) | $\vec{a}$ | $a_i$ | $\begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$ |
+| Vector (rank 1 tensor) | $\vec{a}$ | $a_i$ | $\begin{bmatrix} a_x \\\\ a_y \\\\ a_z \end{bmatrix}$ |
 | Velocity vector | $\vec{V}$ | $v_i$ | $\begin{bmatrix} u \\ v \\ w \end{bmatrix}$ |
 | Matrix (rank 2 tensor) | $A$ | $A_{ij}$ | $\begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\ A_{yx} & A_{yy} & A_{yz} \\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$ |
 | Identity matrix | $I$ | $\delta_{ij}$ | $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$ |
