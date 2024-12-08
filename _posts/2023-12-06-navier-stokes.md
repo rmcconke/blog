@@ -50,7 +50,7 @@ The material derivative operator is notated as $D()/Dt$. The material derivative
 
 | Vector calculus notation | Einstein notation | Cartesian components |
 |:---:|:---:|:---:|
-| $\frac{D\vec{V}}{Dt}=\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}$ | $\frac{Dv_j}{Dt}=\frac{\partial v_j}{\partial t}+v_i \frac{\partial v_j}{\partial x_i}$ | $\begin{aligned}\frac{Du}{Dt} &= \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \\ \frac{Dv}{Dt} &= \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z} \\ \frac{Dw}{Dt} &= \frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}\end{aligned}$ |
+| $\frac{D\vec{V}}{Dt}=\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}$ | $\frac{Dv_j}{Dt}=\frac{\partial v_j}{\partial t}+v_i \frac{\partial v_j}{\partial x_i}$ | $\begin{aligned}\frac{Du}{Dt} &= \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \\\\ \frac{Dv}{Dt} &= \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z} \\\\ \frac{Dw}{Dt} &= \frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}\end{aligned}$ |
 
 #### Stress tensor
 The Cauchy stress tensor is made up of isotropic (hydrostatic) stress, from pressure, and anisotropic (deviatoric) stress, from viscous forces.

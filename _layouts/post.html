@@ -5,4 +5,7 @@ layout: default
   <article class="post">
     {{ content }}
   </article>
+  {% if page.background %}
+  <div class="post-background" style="background-image: url('{{ page.background }}')"></div>
+  {% endif %}
 </div>
