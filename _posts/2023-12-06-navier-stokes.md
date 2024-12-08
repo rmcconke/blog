@@ -34,7 +34,7 @@ References I used to compile this post:
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
 <div style="flex: 0 0 200px; text-align: center;">
-Tensors
+<span class="lavishly-yours-regular">Tensors</span>
 </div>
 <table style="flex: 1; border-collapse: collapse;">
 <tbody>

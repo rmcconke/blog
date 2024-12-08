@@ -50,3 +50,15 @@ nav {
     display: inline;
     margin-right: 10px;
 }
+
+.roboto-text {
+    font-family: 'Roboto', sans-serif;
+}
+.lora-text {
+    font-family: 'Lora', serif;
+}
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
