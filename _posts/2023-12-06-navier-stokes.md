@@ -10,7 +10,7 @@ background: /images/rock.jpg  # Add this line
 ---
 
 ## Introduction
-The Rosetta stone is an important rock that helped us [understand Egyptian hieroglyphics](https://en.wikipedia.org/wiki/Rosetta_Stone). I know that I certainly find it easier to understand a notation when it's written beside a notation I already know. 
+The Rosetta stone is an important rock that helped us [understand Egyptian hieroglyphics](https://en.wikipedia.org/wiki/Rosetta_Stone). I know that I certainly find it easier to understand a notation when it's written beside a notation I already know. And I also know that sometimes, understanding an equation is as hard as understanding Egyptian hieroglyphics.
 
 In this post, I will give several important equations in fluid mechanics in three forms: vector calculus notation, Einstein notation, and with the Cartesian components written out. I start with the more general Cauchy equation and explain when we make certain assumptions to get the compressible and incompressible Navier-Stokes equations.
 
@@ -39,13 +39,21 @@ References I used to compile this post:
 | Einstein notation | $a_i$ | $v_i$ | $A_{ij}$ | $\delta_{ij}$ |
 | Cartesian components | $\begin{bmatrix} a_x \\\\ a_y \\\\ a_z \end{bmatrix}$ | $\begin{bmatrix} u \\\\ v \\\\ w \end{bmatrix}$ | $\begin{bmatrix} A_{xx} & A_{xy} & A_{xz} \\\\ A_{yx} & A_{yy} & A_{yz} \\\\ A_{zx} & A_{zy} & A_{zz} \end{bmatrix}$ | $\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}$ |
 
-### Operations
+### Operations (Part 1)
 
-| Notation | Dot product | Divergence of a vector | Vector-matrix product | Divergence of a tensor | Tensor product or outer product | Gradient of a vector |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Vector calculus notation | $\vec{a}\cdot \vec{b}$ | $\vec{\nabla}\cdot \vec{a}$ | $\vec{a}\cdot B$ | $\vec{\nabla}\cdot A$ | $\vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$ | $\vec{\nabla} \vec{a}$ |
-| Einstein notation | $a_i b_i$ | $\frac{\partial a_i}{\partial x_i}$ | $a_i B_{ij}$ | $\frac{\partial A_{ij}}{\partial x_i}$ | $a_i b_j$ | $\frac{\partial a_i}{\partial x_j}$ |
-| Cartesian components | $a_x b_x + a_y b_y + a_z b_z$ | $\frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$ | $\begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\\\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\\\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$ | $\begin{bmatrix} \frac{\partial B_{xx}}{\partial x} + \frac{\partial B_{yx}}{\partial y} + \frac{\partial B_{zx}}{\partial z} \\\\ \frac{\partial B_{xy}}{\partial x} + \frac{\partial B_{yy}}{\partial y} + \frac{\partial B_{zy}}{\partial z} \\\\ \frac{\partial B_{xz}}{\partial x} + \frac{\partial B_{yz}}{\partial y} + \frac{\partial B_{zz}}{\partial z} \end{bmatrix}$ | $\begin{bmatrix} a_x b_x & a_x b_y & a_x b_z \\\\ a_y b_x & a_y b_y & a_y b_z \\\\ a_z b_x & a_z b_y & a_z b_z \end{bmatrix}$ | $\begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y} & \frac{\partial a_x}{\partial z} \\\\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z} \\\\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z} \end{bmatrix}$ |
+| Notation | Dot product | Divergence of a vector | Vector-matrix product |
+|:---:|:---:|:---:|:---:|
+| Vector calculus notation | $\vec{a}\cdot \vec{b}$ | $\vec{\nabla}\cdot \vec{a}$ | $\vec{a}\cdot B$ |
+| Einstein notation | $a_i b_i$ | $\frac{\partial a_i}{\partial x_i}$ | $a_i B_{ij}$ |
+| Cartesian components | $a_x b_x + a_y b_y + a_z b_z$ | $\frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$ | $\begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\\\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\\\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$ |
+
+### Operations (Part 2)
+
+| Notation | Divergence of a tensor | Tensor product or outer product | Gradient of a vector |
+|:---:|:---:|:---:|:---:|
+| Vector calculus notation | $\vec{\nabla}\cdot A$ | $\vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$ | $\vec{\nabla} \vec{a}$ |
+| Einstein notation | $\frac{\partial A_{ij}}{\partial x_i}$ | $a_i b_j$ | $\frac{\partial a_i}{\partial x_j}$ |
+| Cartesian components | $\begin{bmatrix} \frac{\partial B_{xx}}{\partial x} + \frac{\partial B_{yx}}{\partial y} + \frac{\partial B_{zx}}{\partial z} \\\\ \frac{\partial B_{xy}}{\partial x} + \frac{\partial B_{yy}}{\partial y} + \frac{\partial B_{zy}}{\partial z} \\\\ \frac{\partial B_{xz}}{\partial x} + \frac{\partial B_{yz}}{\partial y} + \frac{\partial B_{zz}}{\partial z} \end{bmatrix}$ | $\begin{bmatrix} a_x b_x & a_x b_y & a_x b_z \\\\ a_y b_x & a_y b_y & a_y b_z \\\\ a_z b_x & a_z b_y & a_z b_z \end{bmatrix}$ | $\begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y} & \frac{\partial a_x}{\partial z} \\\\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z} \\\\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z} \end{bmatrix}$ |
 
 ### Material derivative of velocity
 
