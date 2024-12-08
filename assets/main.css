@@ -131,9 +131,14 @@ a:hover {
     margin: 20px 0;
 }
 
-/* Add this to make everything between remark-start and remark-end right-aligned */
+/* Right-align only until we hit remark-end */
 .remark-start ~ *:not(.remark-end):not(.MathJax_Display) {
     text-align: right;
+}
+
+/* Stop right-alignment after remark-end */
+.remark-end ~ * {
+    text-align: left;
 }
 
 .remark-content {
