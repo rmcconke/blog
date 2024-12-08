@@ -76,11 +76,6 @@ Operations
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\cdot B$</td>
 </tr>
 <tr>
-<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i b_i$</td>
-<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial a_i}{\partial x_i}$</td>
-<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i B_{ij}$</td>
-</tr>
-<tr>
 <td style="text-align: center; padding: 10px;">$\displaystyle a_x b_x + a_y b_y + a_z b_z$</td>
 <td style="text-align: center; padding: 10px;">$\displaystyle \frac{\partial a_x}{\partial x} + \frac{\partial a_y}{\partial y} + \frac{\partial a_z}{\partial z}$</td>
 <td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} a_x B_{xx} & a_yB_{xy} & a_zB_{xz} \\ a_x B_{yx} & a_yB_{yy} & a_zB_{yz} \\ a_x B_{zx} & a_yB_{zy} & a_zB_{zz} \end{bmatrix}$</td>
@@ -89,11 +84,47 @@ Operations
 </table>
 </div>
 
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
+<div style="display: flex; align-items: center;">
+<div style="flex: 0 0 200px; text-align: center;">
+More operations</div>
+<table style="flex: 1; border-collapse: collapse;">
+<thead>
+<tr>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Divergence of a tensor</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Tensor product or outer product</th>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Gradient of a vector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{\nabla}\cdot A$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{a}\vec{b} \equiv \vec{a}\otimes\vec{b}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \vec{\nabla} \vec{a}$</td>
+</tr>
+<tr>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial A_{ij}}{\partial x_i}$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle a_i b_j$</td>
+<td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{\partial a_i}{\partial x_j}$</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} \frac{\partial B_{xx}}{\partial x} + \frac{\partial B_{yx}}{\partial y} + \frac{\partial B_{zx}}{\partial z} \\ \frac{\partial B_{xy}}{\partial x} + \frac{\partial B_{yy}}{\partial y} + \frac{\partial B_{zy}}{\partial z} \\ \frac{\partial B_{xz}}{\partial x} + \frac{\partial B_{yz}}{\partial y} + \frac{\partial B_{zz}}{\partial z} \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} a_x b_x & a_x b_y & a_x b_z \\ a_y b_x & a_y b_y & a_y b_z \\ a_z b_x & a_z b_y & a_z b_z \end{bmatrix}$</td>
+<td style="text-align: center; padding: 10px;">$\displaystyle \begin{bmatrix} \frac{\partial a_x}{\partial x} & \frac{\partial a_x}{\partial y} & \frac{\partial a_x}{\partial z} \\ \frac{\partial a_y}{\partial x} & \frac{\partial a_y}{\partial y} & \frac{\partial a_y}{\partial z} \\ \frac{\partial a_z}{\partial x} & \frac{\partial a_z}{\partial y} & \frac{\partial a_z}{\partial z} \end{bmatrix}$</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
 Material derivative
 </div>
 <table style="flex: 1; border-collapse: collapse;">
+<thead>
+<tr>
+<th style="text-align: center; border-bottom: 1px solid black; padding: 10px;">Material derivative of velocity</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align: center; border-bottom: 1px solid black; padding: 10px;">$\displaystyle \frac{D\vec{V}}{Dt}=\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}$</td>
@@ -107,6 +138,7 @@ Material derivative
 </tbody>
 </table>
 </div>
+
 
 <div style="display: flex; align-items: center;">
 <div style="flex: 0 0 200px; text-align: center;">
