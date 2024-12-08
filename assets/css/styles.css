@@ -11,10 +11,11 @@
   }
   
   .post {
-    background-color: rgba(255, 255, 255, 0.9);  /* semi-transparent white background */
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
     position: relative;
     z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
