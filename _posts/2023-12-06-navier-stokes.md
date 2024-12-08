@@ -95,9 +95,13 @@ The left-hand side of the above equation can be replaced, and the Cauchy stress 
 ### Compressible Navier-Stokes equations
 Assuming $\mu$ is constant, and a Newtonian fluid, we get the compressible Navier-Stokes equations:
 
+<div style="overflow-x: auto;" markdown="1">
+
 | Vector calculus notation | Einstein notation | Cartesian components |
 |:---:|:---:|:---:|
 | $\rho (\frac{\partial\vec{V}}{\partial t}+(\vec{V}\cdot \vec{\nabla})\vec{V}) = - \vec{\nabla} P + \mu \nabla^2 \vec{V} + \tfrac{1}{3}\mu \vec{\nabla}(\vec{\nabla}\cdot\vec{V}) + \rho \vec{g}$ | $\rho (\frac{\partial v_j}{\partial t} +v_i \frac{\partial v_j}{\partial x_i}) = - \frac{\partial P}{\partial x_j} + \mu \frac{\partial^2v_j}{\partial x_i \partial x_i} + \frac{1}{3}\mu \frac{\partial^2 v_i}{\partial x_j \partial x_i} + \rho g_j$ | $\begin{align*}\rho(\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}) &= - \frac{\partial P}{\partial x} + \mu \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2} \right) + \frac{1}{3}\mu \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 v}{\partial x \partial y} + \frac{\partial^2 w}{\partial x \partial z}\right) + \rho g_x \\ \rho(\frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z}) &= - \frac{\partial P}{\partial y} + \mu \left( \frac{\partial^2 v}{\partial x^2} +\frac{\partial^2 v}{\partial y^2} +\frac{\partial^2 v}{\partial z^2} \right) + \frac{1}{3}\mu \left( \frac{\partial^2 u}{\partial y\partial x} + \frac{\partial^2 v}{\partial y^2} + \frac{\partial^2 w}{\partial y \partial z}\right) + \rho g_y \\  \rho(\frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z}) &= - \frac{\partial P}{\partial z} + \mu \left( \frac{\partial^2 w}{\partial x^2} +\frac{\partial^2 w}{\partial y^2} +\frac{\partial^2 w}{\partial z^2} \right) + \frac{1}{3}\mu \left( \frac{\partial^2 u}{\partial z \partial x} + \frac{\partial^2 v}{\partial z \partial y} + \frac{\partial^2 w}{\partial z^2}\right) + \rho g_z\end{align*}$ |
+
+</div>
 
 ### Incompressible Navier-Stokes equations
 Assuming $\mu$ is constant, $\rho$ is constant, and a Newtonian fluid, we get the incompressible Navier-Stokes equations:
