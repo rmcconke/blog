@@ -109,7 +109,7 @@ a:hover {
 .remark-environment:after {
     content: '';
     display: block;
-    height: 2px;
+    height: 1px;
     width: 100%;
     /* Simple gradient fade from right to left */
     background: linear-gradient(to left, #666, transparent);
@@ -125,11 +125,11 @@ a:hover {
 }
 
 .remark-start, .remark-end {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to left, #666, transparent);
-    margin: 20px 0;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to left, #666, transparent);
+  margin: 20px 0;
 }
 
 .remark-content {
