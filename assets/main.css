@@ -54,7 +54,7 @@ nav {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-attachment: scroll;
   background-repeat: repeat-y;
