@@ -190,10 +190,11 @@ The *viscous stress tensor* is a rank 2 tensor that gives us the individual visc
 
 There are several reasons that we typically only consider shear viscosity in fluids. First, bulk viscosity is only important in highly compressible fluids, because for an incompressible fluid, conservation of mass means that the volumetric strain rate is zero (see again my [lecture on this](https://www.youtube.com/watch?v=zHAilIvxuiU&list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&index=15)). Second, for many fluids, the bulk viscosity is negligible. For this reason, we typically only consider the shear stress, making the viscous stress tensor $\tau$ *deviatoric*.
 
-<div class="remark-environment">
-    <span class="ballet-fancy">Remark.</span>
-    <p>The part of the viscous stress tensor related to bulk viscosity is an isotropic tensor.</p>
-</div>
+<hr class="remark-start">
+<span class="ballet-fancy">Remark</span>
+
+The part of the viscous stress tensor related to bulk viscosity is an isotropic tensor.
+<hr class="remark-end">
 
 Here, I give the full viscous stress tensor. For most fluids analysis, the bulk viscosity is negligible, so we typically only consider the second (deviatoric) part.
 
