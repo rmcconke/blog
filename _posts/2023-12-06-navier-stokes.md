@@ -214,21 +214,17 @@ References I used to compile this post:
 <table>
 <thead>
 <tr>
-<th style="text-align: left">Notation</th>
 <th style="text-align: left">Compressible continuity equation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left">Vector calculus notation</td>
 <td style="text-align: left">$\displaystyle \frac{\partial \rho}{\partial t} + \vec{\nabla} \cdot (\rho \vec{V}) = 0$</td>
 </tr>
-<tr>
-<td style="text-align: left">Einstein notation</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \frac{\partial \rho}{\partial t} + \frac{\partial (\rho v_j)}{\partial x_j} = 0$</td>
 </tr>
-<tr>
-<td style="text-align: left">Cartesian components</td>
+<tr style="border-top: 1px solid black">
 <td style="text-align: left">$\displaystyle \frac{\partial \rho}{\partial t} + \frac{\partial(\rho u)}{\partial x} + \frac{\partial (\rho v)}{\partial y} + \frac{\partial (\rho w)}{\partial z} = 0$</td>
 </tr>
 </tbody>
