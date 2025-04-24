@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The nuts and bolts of the PISO algorithm
-date: 2025-04-24 15:00:00-0500
+date: 2025-04-23 15:00:00-0500
 description: A simple explanation of the PISO algorithm
 tags: computational-fluid-dynamics education openfoam
 toc:
