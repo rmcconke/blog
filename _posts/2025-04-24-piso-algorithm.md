@@ -10,6 +10,12 @@ background: '#FFFFFF'
 color: black
 ---
 
+The github repo for this blog post is [here](https://github.com/rmcconke/piso-blogpost). It contains
+- OpenFOAM case setup for the lid driven cavity problem
+- The `verbosePisoFoam` solver, which is a modified version of `pisoFoam` that prints out the discretization matrix.
+- A Python notebook to visualize the discretization matrix.
+
+
 ## Introduction
 
 Segregated pressure velocity coupling solvers for the Navier-Stokes equations. Sound familiar? Well, these algorithms were used to design the last car you were in, and the last plane you were in.
@@ -23,6 +29,7 @@ The main equation is the _momentum equation_:
 $$
 \frac{\partial \mathbf{U}}{\partial t} + \nabla \cdot (\mathbf{U} \mathbf{U}) = -\nabla p + \nu \nabla^2 \mathbf{U}
 $$
+
 (here, $p$ is the kinematic pressure).
 
 
@@ -48,20 +55,55 @@ $$
 M \mathbf{U} = -\nabla p
 $$
 
-The exact schemes used in our discretization of $\mathbf{U}$ are crammed together into one big matrix $M$ of _coefficients_. __These coefficients ($M$) are known. AKA, they are not unknowns. We know $M$. It's a matrix full of numbers.__ Remember: our only two unknowns throughout this are are $p$ and $\mathbf{U}$.
+The exact schemes used in our discretization of $\mathbf{U}$ are crammed together into one big matrix $M$ of _coefficients_. __These coefficients ($M$) are known. AKA, they are not unknowns. We know $M$. It's a matrix full of numbers that we know.__ Remember: our *only two unknowns* throughout this are are $p$ and $\mathbf{U}$.
+
+Let's set up a simple [lid driven cavity problem](https://www.openfoam.com/documentation/tutorial-guide/2-incompressible-flow/2.1-lid-driven-cavity-flow) on a 3x3 mesh so that we can look at the discretization matrix $M$. All
+
 
 Let's look at our matrix $M$ (remember, it's just matrix full of numbers) for a 3x3 mesh. Let's visualize it using colours. The darker the colour, the larger the number. Let's visualize the discretization matrix $M$ in OpenFOAM. The code to do this is attached to this blog post. An important thing to note is that diagonal dominance of this matrix is very important. Stable algorithms tend to have higher diagonal dominance.
 
-
+<img src="/images/matrix_heatmap.png"
+     style="display: block; margin: 0 auto;"
+     alt="visualization of a CFD discretization matrix M"/>
 
 Each row of $M$ corresponds to conservation of momentum for a single cell in the mesh. There are $N$ cells in the mesh, and therefore $M \in \mathbb{R}^{N \times N}$. The diagonal elements are the coefficients for the velocity of the cell itself in the "discretized momentum equation" (i.e., the momentum equation after we substituted in our discretization schemes). The off-diagonal elements are the coefficients for the velocity of all the other cells in the mesh. Conservation of momentum for a given cell usually just considers the neighbouring cells (it's just a momentum balance over a given cell). For example, the momentum balance for the centre cell in this mesh depends on the velocity of the cell itself, and the velocities of the cells to the north, south, east, and west. Can you identify which row in the matrix corresponds to the momentum balance for the centre cell? 
 
-Right, it's the fourth row! It's the only one which depends on four other cells (in this specific 3x3 mesh with non-periodic boundary conditions).
+<img src="/images/dontworryillwait-whatelse.gif"
+     style="display: block; margin: 0 auto;"
+     alt="Dora the explorer waiting for you to answer a question about the discretization matrix"/>
 
-Remark: 
+Right, it's the fifth row! It's the only one which depends on four other cells (in this specific 3x3 mesh with non-periodic boundary conditions). It's highlighted in the image below.
+
+<img src="/images/centre_cell.png"
+     style="display: block; margin: 0 auto;"
+     alt="Visualization of the discretization matrix for the centre cell of a 3x3 mesh"/>
+
+Let's look at the top left (boundary) cell.
+
+<img src="/images/topleft_cell.png"
+     style="display: block; margin: 0 auto;"
+     alt="Visualization of the discretization matrix for the top left cell of a 3x3 mesh"/>
+
+
+Next, let's look at a matrix $M$ for a 32x32 mesh (1024x1024 elements in the matrix).
+
+<img src="/images/matrix_1024.png"
+     style="display: block; margin: 0 auto;"
+     alt="Visualization of the discretization matrix for a 1000x1000 mesh"/>
+
+<img src="/images/Willem_Dafoe_Looking_Up.jpg"
+     style="display: block; margin: 0 auto;"
+     alt="Willem Dafoe looking up"/>
+
+Wow, that's a big matrix! And this is only a mesh with 1000 cells. Typical industrial simulations have 10's of *millions* of cells, or even a [*billion*](https://www.youtube.com/watch?v=F475Q2GVJPA) cells. Do you know how much memory it takes to store a billion X billion matrix? About 8,000 *petabytes*. This single simulation could use 15% of the available memory on the entire planet Earth. Luckily, we can exploit the sparse nature of $M$ to store it in memory, and solve it using iterative methods, which are a lot more efficient than direct methods. In the case of the above video (billion cell mesh), that can be run on a handful of GPUs.
+
+<hr class="remark-start">
+<span class="ballet-fancy">Remark.</span>
 $M$ is:
-- symmetric
-- mostly zeros
+- mostly zeros (aka *sparse*)
+- block-banded
+<hr class="remark-end">
+
 
 ## PISO algorithm
 
@@ -100,7 +142,7 @@ A typical PISO loop is: 1->2->3->4->2->3->4. In other words, that's a momentum c
 [OpenFOAM's](https://www.openfoam.com/) clean implementation of the PISO algorithm is given below.
 
 
-```
+```C++
     Info<< "\nStarting time loop\n" << endl;
 
     while (runTime.loop())
