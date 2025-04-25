@@ -156,7 +156,7 @@ A typical PISO loop is: 1->2->3->4->2->3->4. In other words, that's a momentum c
 [OpenFOAM's](https://www.openfoam.com/) clean implementation of the PISO algorithm is given below.
 
 
-```C++
+```Cpp
 Info<< "\nStarting time loop\n" << endl;
 
 while (runTime.loop())
