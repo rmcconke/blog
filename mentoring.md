@@ -1,7 +1,7 @@
 ---
 layout: page 
 title: Mentoring
-permalink: /Mentoring/
+permalink: /mentoring/
 ---
 
 # Mentees
@@ -11,7 +11,7 @@ I've had the privilege of working with several highly talented students on some 
 - [**David De La Torre**](https://www.linkedin.com/in/david-delatorre/) (MIT). We explored using [stochastic rounding](https://nhigham.com/2020/07/07/what-is-stochastic-rounding/) for lattice Boltzmann method fluid dynamics simulations using single precision floating point representations.
 
 ## 2024
-- [**Nikhila Kalia**](https://www.linkedin.com/in/nikhila-kalia/) (University of Waterloo). During Nikhila's Masters, we had fun [trying out Kolmogorov-Arnold networks for turbulence modelling](https://arxiv.org/abs/2505.19366), running [turbo-RANS](https://www.emerald.com/hff/article-abstract/34/8/2986/1234503/Turbo-RANS-straightforward-and-efficient-Bayesian?redirectedFrom=fulltext) ([code](https://github.com/rmcconke/turbo-rans)) in order to [tune the GEKO model for predicting flow separation](https://arxiv.org/abs/2502.11218), and implementing [THANOS](https://github.com/rmcconke/np-thanos) (thermal hydraulic analysis for numerical 1D simulation) our short 1D numpy CFD code for simulating compressible flows that never went anywhere but we loved naming.
+- [**Nikhila Kalia**](https://www.linkedin.com/in/nikhila-kalia/) (University of Waterloo). During Nikhila's Masters, we had fun [trying out Kolmogorov-Arnold networks for turbulence modelling](https://arxiv.org/abs/2505.19366), running [turbo-RANS](https://www.emerald.com/hff/article-abstract/34/8/2986/1234503/Turbo-RANS-straightforward-and-efficient-Bayesian?redirectedFrom=fulltext) ([code](https://github.com/rmcconke/turbo-rans)) in order to [tune the GEKO model for predicting flow separation](https://arxiv.org/abs/2502.11218), and implementing [THANOS](https://github.com/rmcconke/np-thanos) (thermal hydraulic analysis for numerical 1D simulation), our short 1D numpy CFD code for simulating compressible flows that never went anywhere but we loved naming.
 
 ## 2023
 - [**Sami Akkila**](https://www.linkedin.com/in/samiakkila/) (University of Manchester). During Sami's [summer internship](https://www.linkedin.com/feed/update/urn:li:activity:7104821938128113665/), we used machine learning to correct discretization error for CFD simulations of [Rayleigh–Bénard convection](https://en.wikipedia.org/wiki/Rayleigh%E2%80%93B%C3%A9nard_convection#:~:text=In%20fluid%20thermodynamics%2C%20Rayleigh%E2%80%93B%C3%A9nard,cells%20known%20as%20B%C3%A9nard%20cells.).
