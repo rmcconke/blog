@@ -1,7 +1,7 @@
 ---
 layout: page 
-title: Mentorship
-permalink: /mentorship/
+title: Mentoring
+permalink: /Mentoring/
 ---
 
 # Mentees
