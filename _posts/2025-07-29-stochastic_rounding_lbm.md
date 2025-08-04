@@ -44,7 +44,21 @@ David implemented the vanilla LBM algorithm, as well as the DDF-shifted version 
 ## Results
 We focused on simulating [Taylor-Green vortex decay](https://en.wikipedia.org/wiki/Taylor%E2%80%93Green_vortex). This is a simple canonical flow used to test CFD solver implementations. It's one of the rare cases where we know the analytical solution to the Navier-Stokes equations given a set of initial and boundary conditions, so we can exactly evaluate the error in our simulation.
 
-In a similar manner to Lehman et al., we analyzed the decay in total energy over time as the vortex decays. You can easily see where roundoff error dominates the overall simulation error. The plot below summarizes our results.
+Here's essentially the "reference" simulation. It's a 64x64 grid simulation of Taylor Green vortex decay, with FP64 representation and DDF shifting used.
+<img src="/images/taylor_green_vortex_Float64_shift.gif" alt="Description 2" style="width: 100%;">
+
+Here are the results from experimenting with different floating point representations (FP32 and FP16), stochastic rounding (sr), and distribution shifting (shift/unshift). This is over the first few time steps of the decay.
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+    <img src="/images/taylor_green_vortex_Float32_unshift.gif" alt="Description 3" style="width: 100%;">
+    <img src="/images/taylor_green_vortex_Float32_shift.gif" alt="Description 4" style="width: 100%;">
+    <img src="/images/taylor_green_vortex_Float32sr_shift.gif" alt="Description 5" style="width: 100%;">
+    <img src="/images/taylor_green_vortex_Float16_unshift.gif" alt="Description 3" style="width: 100%;">
+    <img src="/images/taylor_green_vortex_Float16_shift.gif" alt="Description 4" style="width: 100%;">
+    <img src="/images/taylor_green_vortex_Float16sr_shift.gif" alt="Description 5" style="width: 100%;">
+</div>
+
+It's clear that the FP16 case doesn't decay at all, so it isn't usable. In a similar manner to Lehman et al., we analyzed the decay in total energy over time as the vortex decays. You can easily see where roundoff error dominates the overall simulation error. The plot below summarizes our results.
 
 <img src="/images/TG_SR.png"
      style="display: block; margin: 0 auto;"
