@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A nice 3D homogeneous isotropic turbulence dataset
-date: 2025-07-29 15:00:00-0500
+title: A tasty 3D homogeneous isotropic turbulence dataset
+date: 2025-08-4 15:00:00-0500
 description: 
 tags: computational-fluid-dynamics direct-numerical-simulation turbulence dataset
 toc:
@@ -11,7 +11,23 @@ color: black
 ---
 
 ## Introduction
-I recently came across a great [3D homogeneous isotropic turbulence (HIT) dataset](https://publications.rwth-aachen.de/record/981830) from RWTH Aachen. I really like this dataset, so I'm putting together this blog post to show how to access the data, and what it looks like. [This document](https://publications.rwth-aachen.de/record/981830/files/DataAccess-and-DataDescription_981830.pdf) from Ludovico Nista et al. contains more details; the point of this post is to be a friendly introduction to this dataset.
+I recently came across a [3D homogeneous isotropic turbulence (HIT) dataset](https://publications.rwth-aachen.de/record/981830) from RWTH Aachen. I like this dataset because:
+- it was easy to access
+- it's well-documented
+- there's a reasonable amount of training data
+- there are pre-computed inputs/targets for superresolution
+
+So I'm putting together this blog post to show how to access the data, and what it looks like. [This document](https://publications.rwth-aachen.de/record/981830/files/DataAccess-and-DataDescription_981830.pdf) from Ludovico Nista et al. contains more details; the point of this post is to be a friendly introduction to this dataset.
+
+## Basic overview
+There are two flows in the dataset:
+- forced homogeneous isotropic turbulence
+- decaying homogeneous isotropic turbulence
+
+The following formats are available:
+- original DNS velocity fields on a $512^3$ mesh
+- curated dataset for superresolution, with corresponding pairs of low res (filters) and high res $64^3$ subboxes of the original domain.
+
 
 ## Accessing the dataset
 You need AWS CLI to access the dataset. Here's how I installed AWS CLI on Linux, based on the [install instructions](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
@@ -20,7 +36,13 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 ```
-There are two datasets: forced and decaying 3D homogeneous isotropic turbulence. Let's set up the profiles for both:
+There are four datasets:
+- forced HIT, original
+- forced HIT, curated
+- decaying HIT, original
+- decaying HIT, curated
+
+Let's set up the profiles for both curated datasets.
 
 #### Forced 3D HIT profile
 
@@ -215,20 +237,19 @@ aws s3 sync s3://a9ba76c4-2bd9-4f96-9758-0999a0fe87a4/ ./forced_hit_complete/ --
 ```
 aws s3 sync s3://a4d61e08-ba64-4bc8-b790-d6cf5ca6ebd9/ ./decaying_hit_complete/ --endpoint-url=https://coscine-s3-01.s3.fds.rwth-aachen.de:9021 --profile subboxes-decaying --exclude "stage_reduced_*/*"
 ```
+If you don't want to download the whole dataset at once, you can access the directories based on the structure I gave above. For example, something like 
+```
+aws s3 sync s3://a4d61e08-ba64-4bc8-b790-d6cf5ca6ebd9/path/to/dataset/directory /path/to/local/storage --endpoint-url=https://coscine-s3-01.s3.fds.rwth-aachen.de:9021 --profile subboxes-decaying
+```
 
-2. Download just the FS8 Box filtered data
-- Forced HIT (**XXX download**)
-```
-```
 
-- Decaying HIT (**XXX download**)
-```
-```
 
 ## Visualizing the dataset
-All code for visualization is availalble in the [git repo](https://github.com/rmcconke/HIT3D_dataset) for this blog post. 
+All code for visualization is availalble in the [git repo](https://github.com/rmcconke/HIT3D_dataset) for this blog post. I have a script which takes the original dataset format ($N$ boxes per $T$ timesteps) and extracts an individual numpy array for each box for each timestep. It's appropriately called `extract_individual_numpy_arrays.py` in my repo.
 
-I'm going to visualize the DNS data that comes with the box filtered data, for the FS8 task.
+I'm going to visualize the DNS data that comes with the box filtered data for the FS8 task.
+
+### Velocity magnitude
 
 Let's look at the velocity magnitude for all 64 boxes from the forced HIT DNS dataset.
 <div style="max-width: 600px; margin: 0 auto;">
@@ -239,6 +260,7 @@ Let's look at the velocity magnitude for all 64 boxes from the forced HIT DNS da
          style="width: 100%; height: auto; display: block;"
          alt="Available data"/>
 </div>
+
 We can see that generally, the velocity magnitude remains the same throughout the dataset. It is, in fact, *forced* HIT. That's kind of the point!
 
 
@@ -255,27 +277,36 @@ Similarly, here are all 32 boxes from the decaying HIT dataset:
 
 The velocity magnitude decays, because this is a *decaying* HIT dataset. 
 
-The $Q$ criterion is used to visualize vortex structures in a turbulent flow. It's calculated by
+### $Q$-criterion
+The $Q$-criterion sounds like some some sort of conspiracy theory, but it's much more boring than that. It's used to visualize vortex structures in a turbulent flow. It's calculated by
 
 $$
-Q = \frac{1}{2}\left(||R||^2-||S||^2 -\right) \ ,
+Q = \frac{1}{2}\left(||R||^2-||S||^2 \right) \ ,
 $$
 
 
 
-where $||\cdot||^2$ is the [Frobenius norm](https://mathworld.wolfram.com/FrobeniusNorm.html) of a tensor. To take the Frobenius norm, you just individually square each element, and then sum them up. More information about the $Q$-criterion can be found in these references:
+where $||\cdot||^2$ is the [Frobenius norm](https://mathworld.wolfram.com/FrobeniusNorm.html) of a tensor, $R$ is the rotation rate tensor, and $S$ is the strain rate tensor. To take the Frobenius norm, you just individually square each element, and then sum them up (remember, [code](https://github.com/rmcconke/HIT3D_dataset) is provided with this post so you can see exactly how I do it). More information about the $Q$-criterion can be found in these references:
 - https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/on-the-relationships-between-local-vortex-identification-schemes/E1DE98BE2DACF2A1724F62322C7FAFEB
 - https://pubs.aip.org/aip/pof/article/31/12/121701/957670/Comparison-between-the-Q-criterion-and-Rortex-in
 
-$Q$-criterion measures excess strain to rotation rate. When $Q>0$, it indicates
+$Q$-criterion measures excess strain to rotation rate. When $Q>0$, it indicates regions where vorticity dominantes over strain (because the rotation rate tensor $R$ has a higher Frobenius norm than the strain rate tensor $S$).
 
 
-Box 0
-U magnitude
-Q criterion
-Slices of means/std, animated/moving through domain
+Here's an animation of isosurface of $Q = 0.05$, for a single box of the forced turbulence dataset. It's coloured by velocity magnitude. This lets us see the vortices, coloured by the speed at which the vortex structure is moving.
+<div style="max-width: 600px; margin: 0 auto;">
+    <img src="/images/isocontour_q_criterion.gif"
+         style="width: 100%; height: auto; display: block;"
+         alt="Available data"/>
+    <img src="/images/colourbar_decaying_boxfilter_fs8_highres.png"
+         style="width: 100%; height: auto; display: block;"
+         alt="Available data"/>
+</div>
 
 
+## A couple of notes
+- The dataset is *dimensional*. These velocities are in units of m/s. Details on the mesh spacing can be found in the dataset documentation. This is cool! Often, DNS data is non-dimensionalized in a way that hurts my smooth brain.
+- **The subboxes for the different tasks are different**. For example, while the target boxes for the FS4 Box filtered data correspond to the input boxes for this specific task, they are different than the target boxes from the FS4 Spectral filtered data.
 
 ## Computing the turbulent kinetic energy spectrum
-There are different ways and formulas to compute the turbulent kinetic energy spectrum. 
+In [this blog post](https://ryleymcconkey.com/2025/07/HIT-turbulence-dataset/), I document in a high level of detail how to compute the turbulent kinetic energy spectrum for this flow. 
