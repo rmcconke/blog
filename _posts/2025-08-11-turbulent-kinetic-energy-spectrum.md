@@ -85,9 +85,11 @@ The units of `numpy`'s FFT are the same as the original field. You can see in th
 ## The basic overview
 
 We start with an instantaneous velocity vector field:
+
 $$
 \vec{u}(\vec{x}) = (u_x(\vec{x}), u_y(\vec{x}), u_z(\vec{x})) \ . 
 $$
+
 In physical space, the position vector is $\vec{x}$.
 
 
@@ -103,9 +105,11 @@ Visualizing a 3D vector field is hard. Let's try to visualize $\vec{u}(\vec{x})$
 
 ### Spectral velocity 
 We take the Fourier transform of this field to get the *spectral velocity*:
+
 $$
 \vec{\hat{u}}(\vec{k}) = (\hat{u}_x(\vec{k}), \hat{u}_y(\vec{k}), \hat{u}_z(\vec{k})) \ . 
 $$
+
 This is also a vector field, but in wave-space. The position vector in wave-space is the *wave-vector* $\hat{k}$. The wave-vector is $\vec{k} = (k_x,k_y,k_z)$. In wave-space, the wave-vector points to fluctuations of a certain wavelength (given by $\lambda = 2\pi/|\vec{k}|$) in a certain direction (given by the unit vector $\vec{k}/|\vec{k}|$). For example, $\vec{k} = (k_x,0,0)$ corresponds with motions along the $x$ direction.
 
 Let's try to visualize this 3D vector field $\vec{\hat{u}}(\vec{k})$:
@@ -114,9 +118,11 @@ Let's try to visualize this 3D vector field $\vec{\hat{u}}(\vec{k})$:
 
 ### Velocity spectrum tensor
 From our spectral velocity, we can derive the following second-order tensor, called the *velocity spectrum tensor*:
+
 $$
-\Phi_{ij}(\vec{k}) = \frac{1}{V}\left(\vec{\hat{u}}_i(\vec{k}) \vec{\hat{u}}_j(\vec{k}))\right)
+\Phi_{ij}(\vec{k}) = \frac{1}{V}\left(\vec{\hat{u}}_i(\vec{k}) \vec{\hat{u}}_j(\vec{k})\right)
 $$
+
 *Note: the above formula assumes homogeneity of the field*.
 
 This is a second-order tensor field in wave-space. It represents the distribution of kinetic energy between the $i$ and $j$ velocity components. Pope says 
@@ -142,7 +148,16 @@ $$
 E(|\vec{k}|) = E(k)= \int_{|\vec{k}| = k} E(\vec{k}')dS(\vec{k}')
 $$
 
-The overloading $|\vec{k}|=k$ here is done for brevity, but it's a pretty brutal notation in my opinion. $dS(\vec{k}')$ is around a spherical shell in wave-space. To practically compute this, we just bin our calculated $E(\vec{k})$ by $|\vec{k}|$, as shown below.
+### 1D energy spectrum
+
+Up to this point, we’ve assumed homogeneity (above). But, if the flow is *isotropic* (or we close our eyes and pretend it is), then we can actually come up with a 1D spectrum, which is a function of \( \lvert \vec{k} \rvert \) only.
+
+\[
+E(\lvert \vec{k} \rvert) \equiv E(k) = \int_{\lvert \vec{k}' \rvert = k} E(\vec{k}')\, dS(\vec{k}')
+\]
+
+The overloading \( \lvert \vec{k} \rvert = k \) here is done for brevity, but it’s a pretty brutal notation in my opinion. \( dS(\vec{k}') \) is the surface measure on a spherical shell in wave-space. To practically compute this, we just bin our calculated \( E(\vec{k}) \) by \( \lvert \vec{k} \rvert \), as shown below.
+
 
 (code coming soon)
 
