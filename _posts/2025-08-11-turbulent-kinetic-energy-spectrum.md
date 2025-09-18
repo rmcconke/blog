@@ -110,7 +110,7 @@ $$
 \vec{\hat{u}}(\vec{k}) = (\hat{u}_x(\vec{k}), \hat{u}_y(\vec{k}), \hat{u}_z(\vec{k})) \ . 
 $$
 
-This is also a vector field, but in wave-space. The position vector in wave-space is the *wave-vector* $\hat{k}$. The wave-vector is $\vec{k} = (k_x,k_y,k_z)$. In wave-space, the wave-vector points to fluctuations of a certain wavelength (given by $\lambda = 2\pi/|\vec{k}|$) in a certain direction (given by the unit vector $\vec{k}/|\vec{k}|$). For example, $\vec{k} = (k_x,0,0)$ corresponds with motions along the $x$ direction.
+This is also a vector field, but in wave-space. The position vector in wave-space is the *wave-vector* $\hat{k}$. The wave-vector is $\vec{k} = (k_x,k_y,k_z)$. In wave-space, the wave-vector points to fluctuations of a certain wavelength (given by $\lambda = 2\pi/ \lvert \vec{k}\rvert$) in a certain direction (given by the unit vector $\vec{k}/\lvert \vec{k} \rvert$). For example, $\vec{k} = (k_x,0,0)$ corresponds with motions along the $x$ direction.
 
 Let's try to visualize this 3D vector field $\vec{\hat{u}}(\vec{k})$:
 
@@ -145,19 +145,10 @@ This is a scalar-valued function of the wave-vector $\vec{k}$. It's the kinetic 
 Up to this point, we've assumed homogeneity (above). But, if the flow is *isotropic* (or we close our eyes and pretend it is), then we can actually come up with a 1D spectrum, which is a function of $|\vec{k}|$ only. 
 
 $$
-E(|\vec{k}|) = E(k)= \int_{|\vec{k}| = k} E(\vec{k}')dS(\vec{k}')
+E(|\vec{k}|) = E(k)= \int_{\lvert \vec{k}\rvert = k} E(\vec{k}')dS(\vec{k}')
 $$
 
-### 1D energy spectrum
-
-Up to this point, we’ve assumed homogeneity (above). But, if the flow is *isotropic* (or we close our eyes and pretend it is), then we can actually come up with a 1D spectrum, which is a function of \( \lvert \vec{k} \rvert \) only.
-
-\[
-E(\lvert \vec{k} \rvert) \equiv E(k) = \int_{\lvert \vec{k}' \rvert = k} E(\vec{k}')\, dS(\vec{k}')
-\]
-
-The overloading \( \lvert \vec{k} \rvert = k \) here is done for brevity, but it’s a pretty brutal notation in my opinion. \( dS(\vec{k}') \) is the surface measure on a spherical shell in wave-space. To practically compute this, we just bin our calculated \( E(\vec{k}) \) by \( \lvert \vec{k} \rvert \), as shown below.
-
+The overloading $\lvert \vec{k}\rvert = k$ here is done for brevity, but it's a pretty brutal notation in my opinion. $dS(\vec{k}')$ is around a spherical shell in wave-space. To practically compute this, we just bin our calculated $E(\vec{k})$ by $\lvert \vec{k} \rvert$, as shown below.
 
 (code coming soon)
 
