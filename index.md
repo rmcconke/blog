@@ -9,6 +9,22 @@ layout: page
 # Ryley McConkey
 [Email](mailto:rmcconke@mit.edu) / [Github](https://github.com/rmcconke) / [Google Scholar](https://scholar.google.com/citations?user=GcAsX_EAAAAJ&hl=en)
 
+## News
+- **December 2025**: I'll be at the NeurIPS ML for Physical Sciences workshop. We're presenting a poster based on our on accepted [workshop paper](https://arxiv.org/abs/2509.20683) on distributional symmetry in turbulence. 
+- **November 2025**: I presented our [abstract](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=GcAsX_EAAAAJ&sortby=pubdate&citation_for_view=GcAsX_EAAAAJ:UebtZRa9Y70C) on equivariance for subgrid scale closure modelling at an Interact session at the APS DFD 2025 meeting ([poster](docs/2025.11.23_McConkey_Ryley_APS_DFD_Interact.pdf)).
+
+- **November 2025**: Tyler Buchanan, Richard Dwight, Paola Cinella, and I are putting together a continuously running, field-wide benchmark for RANS turbulence modelling. It's time we had a standardized benchmark for machine learning in RANS! The data and evaluation package is now public. See the description [here](https://github.com/rmcconke/closure-challenge-benchmark). It's being advertised as part of the 2026 ERCOFTAC ML for Fluids Workshop ([link](https://ml4fluids2026.github.io/challenges/)), but it will run beyond the conference. To participate, email Tyler: t.s.b.buchanan@tudelft.nl .
+
+- **September 2025**: We have a [preprint out](https://arxiv.org/abs/2509.20683) on distributional symmetry in turbulence, and how superresolution models can learn equivariance just from the rotational nature of turbulence data.
+
+
+- **April 2024**: I presented at the Chalmers University of Technology Data Science and Artificial Intelligence Seminar Series ([slides](docs/2025.04.14%20Talk%20at%20Chalmers%20University%20of%20Technology.pdf)). I also went to IKEA in Sweden. What else?
+- **March 2024**: I presented at the ERCOFTAC ML for Fluids Workshop in London ([slides](docs/2025.04.02%20ERCOFTAC%20Workshop%20Presentation.pdf)). It was a great workshop, and I enjoyed my time in London! 
+
+
+
+
+## About me
 I graduated from the University of Alberta in 2019 with a Bachelor's of Science in Mechanical Engineering (co-op). Pursing an interest in turbulence and computational fluid dynamics (CFD), I then began a Master's degree at the University of Waterloo. In my Master's research, I was focused on simulating a new type of wind turbine which uses vortex induced vibration (VIV) to generate energy. Then, I direct transferred to a PhD in 2020. My PhD was focused on developing new turbulence models using machine learning. I completed a 6 month visit at the University of Manchester in 2022-2023, where I focused on data-driven turbulence modelling on complex 3D flows. After completing my PhD in 2024, I have recently started a Postdoc at MIT in Tess Smidt's [atomic architects](https://atomicarchitects.com/) group. More to come!
 
 My diverse experience includes mechanical design, software implementation, and industrial research and development. At [MACH32](https://www.mach32.net/), a medical device startup company, I designed and simulated novel autoinjectors and COVID-19 protection devices. I also worked on automating CFD simulations as a Software Developer at [Orbital Stack](https://orbitalstack.com/), a wind engineering startup company. In the Research and Development group (Labs) at [RWDI](https://rwdi.com/en_ca/), I developed and implemented machine learning based tools to augment simulations and wind tunnel experiments.
