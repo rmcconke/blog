@@ -8,6 +8,8 @@ layout: page
 
 # Ryley McConkey
 [Email](mailto:rmcconke@mit.edu) / [Github](https://github.com/rmcconke) / [Google Scholar](https://scholar.google.com/citations?user=GcAsX_EAAAAJ&hl=en)
+
+
 I'm a postdoc working with the [Atomic Architects](https://atomicarchitects.com/) and [Multiscale Mariners](https://multiscalemariners.com/) research groups at MIT. I'm working on data-driven methods for turbulence modelling, such as subgrid-scale modelling for LES, benchmarking for RANS closure modelling, and superresolution of turbulent flows. I love fluid mechanics! Check out my [YouTube playlist](https://youtube.com/playlist?list=PLuV-XJJZrRRdv2KTVYH8mer53Q9pl31mK&si=dF3x-q-c1wbmNGwZ), [lectures](https://youtube.com/playlist?list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&si=8jwyXrmZDP60qn3p), and [blog posts](https://ryleymcconkey.com/writing/).
 
 <img src="images/ezgif.com-gif-maker_best_0.gif" alt="vortex shedding from a cube" style="width: 500px; height: auto;">
