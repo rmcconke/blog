@@ -62,9 +62,8 @@ Redesigning the tutorials in my Fluids 1 class has been a valuable way to provid
 
 ### Continued development of my pedagogical approach
 
-My pedagogical approach continues to evolve based on student feedback and professional development. As part of my commitment to developing my own teaching skills, I regularly seek student feedback. It is important for me to adapt my teaching approach to what is working for the students. A clear example of this desire for feedback is my organizing of an early student feedback poll, conducted after three weeks in my class. Personal reflection on metacognition (“thinking about how we think”) has also been helpful for me to more efficiently learn how to teach. Embedding metacognitive discussions into my lectures has also been effective for student understanding of concepts not just in my course, but more broadly.
+My pedagogical approach continues to evolve based on student feedback and professional development. Part of my continued development is to seek advice and strategies from other instructors, attend trainings, and learn what the current state-of-the-art in engineering teaching is. I also regularly seek student feedback. It is important for me to adapt my teaching approach to what is working for the students. A clear example of this desire for feedback is my organizing of an early student feedback poll, conducted after three weeks in my class. Personal reflection on metacognition (“thinking about how we think”) has also been helpful for me to more efficiently learn how to teach. Embedding metacognitive discussions into my lectures has also been effective for student understanding of concepts not just in my course, but more broadly. 
 
-A key part of my continued development is to seek advice and strategies from other instructors, attend trainings, and learn what the current state-of-the-art in engineering teaching is. 
 
 ### Inclusivity and being a compassionate teacher
 
