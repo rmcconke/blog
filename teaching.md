@@ -4,6 +4,10 @@ title: Teaching
 permalink: /teaching/
 ---
 
+
+During my academic career, I've had the opportunity to be both a teaching assistant and course instructor. 
+
+
 # Sessional Instructor - ME 351 (Fluid Mechanics 1)
 
 I taught Fluid Mechanics 1 in Winter 2024 at UWaterloo. Here is a YouTube playlist of my lectures:
