@@ -10,8 +10,8 @@ During my academic career, I've had the opportunity to be both a teaching assist
 ## Showcasing my teaching
 I wrote a [blog post](https://ryleymcconkey.com/2025/12/fluid-mechanics-teaching/) on my experience teaching Fluid Mechanics 1. Here are some examples of my teaching materials:
 
-- [Seminar on dimensional analysis](docs/Tutorial%206%20-%20Dimensional%20Analysis%20and%20Similarity.pdf), and the [TA instructions](docs/Tutorial%206%20-%20TA%20Instructions.pdf) for this seminar.
-- [My course project](docs/ME%20351%20Winter%202024%20Project.pdf), [project resources](docs/ME351_project.zip), and [video explaining the project](https://www.youtube.com/embed/_8mzf9kiDdA?si=laihfrTZpbN3VQDQ).
+- [Seminar on dimensional analysis](/docs/Tutorial_6_Dimensional_Analysis_and_Similarity.pdf), and the [TA instructions](/docs/Tutorial_6_TA_Instructions.pdf) for this seminar.
+- [My course project](/docs/ME_351_Winter_2024_Project.pdf), [project resources](/docs/ME351_project.zip), and [video explaining the project](https://www.youtube.com/embed/_8mzf9kiDdA?si=laihfrTZpbN3VQDQ).
   
 Here is a YouTube playlist of my lectures:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=N4ilikCJetOcjntN&amp;list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -64,7 +64,7 @@ Redesigning the tutorials in my Fluids 1 class has been a valuable way to provid
 
 My pedagogical approach continues to evolve based on student feedback and professional development. As part of my commitment to developing my own teaching skills, I regularly seek student feedback. It is important for me to adapt my teaching approach to what is working for the students. A clear example of this desire for feedback is my organizing of an early student feedback poll, conducted after three weeks in my class. Personal reflection on metacognition (“thinking about how we think”) has also been helpful for me to more efficiently learn how to teach. Embedding metacognitive discussions into my lectures has also been effective for student understanding of concepts not just in my course, but more broadly.
 
-A key part of my continued development is to seek advice and strategies from other instructors. I completed the optional “Fundamentals of University Teaching” program at the University of Waterloo’s Centre for Teaching Excellence. I also completed the Canadian Engineering Excellence Association’s Institute for Engineering Teaching (affiliated with CEAB) in Winter 2024, and I plan to attend yearly given the excellent training I received.
+A key part of my continued development is to seek advice and strategies from other instructors, attend trainings, and learn what the current state-of-the-art in engineering teaching is. 
 
 ### Inclusivity and being a compassionate teacher
 
