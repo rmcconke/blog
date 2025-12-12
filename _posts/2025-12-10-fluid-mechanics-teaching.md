@@ -19,21 +19,15 @@ During my PhD at UWaterloo, I had the opportunity to teach ME 351: Fluid Mechani
 
 ### Summary of resources I'd like to share
 1. Web browser [Lattice Boltzmann Method simulator](https://physics.weber.edu/schroeder/software/demos/FluidDynamics.html) that you can use for various demos.
-2. My [interactive seminar on dimensional analysis](/docs/Tutorial%6%-%Dimensional%Analysis%and%Similarity.pdf), and the [TA instructions](docs/Tutorial%6%-%TA%Instructions.pdf) for this seminar.
-3. My course project: [project description](/docs/ME%351%Winter%2024%Project.pdf), [project resources](/docs/ME351_project.zip), and [video explaining the project](https://www.youtube.com/embed/_8mzf9kiDdA?si=laihfrTZpbN3VQDQ).
+2. My [interactive seminar on dimensional analysis](docs/Tutorial%6%-%Dimensional%Analysis%and%Similarity.pdf), and the [TA instructions](docs/Tutorial%6%-%TA%Instructions.pdf) for this seminar.
+3. My course project: [project description](docs/ME%351%Winter%2024%Project.pdf), [project resources](docs/ME351_project.zip), and [video explaining the project](https://www.youtube.com/embed/_8mzf9kiDdA?si=laihfrTZpbN3VQDQ).
 
-### Summary of things I learned to do
-- Record lectures
-- Post slides ahead of time
-- Handwrite notes in class
-- Provide learning objectives for each lecture
-- Provide a practice midterm and final
-- Use visualizations, demos, and interactivity in lectures
+
 
 ## Lectures
 Lectures are the core way that content is delivered in most engineering courses. I kept a highly structured approach to the lectures:
 1. **Review of key points from last lecture (slide)** (~1-2 minutes).  In one slide, I screenshotted key formulas and summarized the previous lecture in a few bullet points.
-2. **Context of today's lecture (slide)**(~30 seconds) (where are we in the course?). Most lectures involve zooming in quite closely on a concept. But I find it's so helpful for students to see the context. Where are we going with this? Where have we been?
+2. **Context of today's lecture (slide)** (~30 seconds) (where are we in the course?). Most lectures involve zooming in quite closely on a concept. But I find it's so helpful for students to see the context. Where are we going with this? Where have we been?
 3. **Motivating the current lecture, and learning objectives (slide)** (~1 minute). More about this in the next section.
 
 These ~3 minutes contextualizing the problem are important for student retention, and to bring student focus into the room. They have a million assignments, problems, things they're doing later, etc. Taking 3 minutes to welcome them in and focus them is important. You'd want someone else to extend the same courtesy to you :). 
@@ -78,7 +72,7 @@ I re-structured the course seminars to be interactive, rather than having the TA
 
 I would do it this way again in a future course. 
 
-Some seminars involved active learning. For example, [here's a seminar I did on dimensional analysis](/docs/Tutorial%6%-%Dimensional%Analysis%and%Similarity.pdf), that involved role-playing as engineering consultants with the TAs as the client. This was really successful! The students had fun learning in an authentic setting. I attended this seminar to see how it went, and the vibe in the room was great.
+Some seminars involved active learning. For example, [here's a seminar I did on dimensional analysis](docs/Tutorial%6%-%Dimensional%Analysis%and%Similarity.pdf), that involved role-playing as engineering consultants with the TAs as the client. This was really successful! The students had fun learning in an authentic setting. I attended this seminar to see how it went, and the vibe in the room was great.
 
 **Q: Don't students get annoyed with graded tutorials?**
 
@@ -97,9 +91,9 @@ I took my class on an afternoon field trip to RWDI, a local wind tunnel facility
 
 
 ## The class project
-I also re-did the class project. I wanted to design an authentic project that mirrors the type of analysis done in the real world. By the end of Fluids 1, students are able to do basic pipeline hydraulic design. The full project description is available [here](/docs/ME%351%Winter%2024%Project.pdf), and additional project materials are available [here](/docs/ME351_project.zip). Here is the gist of it:
+I also re-did the class project. I wanted to design an authentic project that mirrors the type of analysis done in the real world. By the end of Fluids 1, students are able to do basic pipeline hydraulic design. The full project description is available [here](docs/ME%351%Winter%2024%Project.pdf), and additional project materials are available [here](docs/ME351_project.zip). Here is the gist of it:
 
-<img src="/images/project_description.png"
+<img src="images/project_description.png"
      style="display: block; margin: 0 auto;"
      alt="Project description"/>
 
@@ -110,7 +104,7 @@ I made a short YouTube video explaining the project to the students as well.
 Here was my design philosophy:
 - **Authentic.** Students feel like they're doing real engineering (i.e., what they signed up for when they enrolled in an engineering program).
 - **Open-ended, with constraints.** Mirroring real-world engineering tasks, there are so many different ways to accomplish the project. However, there are still important constraints that need to be followed.
-- **Clear, reasonable deliverables**. In my full [project description](/docs/ME%351%Winter%2024%Project.pdf), you see that I clearly tell the students what they need to include in their report, and how long each section should be. This was very well-received. When I was a student, I remember some groups submitting 30 page reports for a project, while some groups only submitted 3 pages. This was all due to unclear expectations. This doesn't make sense. I learned to keep expectations clear.
+- **Clear, reasonable deliverables**. In my full [project description](docs/ME%351%Winter%2024%Project.pdf), you see that I clearly tell the students what they need to include in their report, and how long each section should be. This was very well-received. When I was a student, I remember some groups submitting 30 page reports for a project, while some groups only submitted 3 pages. This was all due to unclear expectations. This doesn't make sense. I learned to keep expectations clear.
 - **Motivate exploration of the topic with bonus marks.** As you can see above, I created a competition which motivated the students to not only complete a basic hydraulic design, but optimize it. The competition part of the class injected a lot of energy into the project. I would definitely do this again.
 
 The students loved this project! Here's what they had to say:
@@ -118,3 +112,13 @@ The students loved this project! Here's what they had to say:
 - *"most important thing learned: Application of concept into real life scenarios through the project."*
 
 
+## Conclusion
+In summary, my first teaching experience taught me to
+- Record lectures
+- Post slides ahead of time
+- Handwrite notes in class
+- Provide learning objectives for each lecture
+- Provide a practice midterm and final
+- Use visualizations, demos, and interactivity in lectures
+- Incoporate interactive/active learning-based seminars
+- Encourage authentic assignments and projects that tie course concepts to real-world engineering problems
