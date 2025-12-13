@@ -93,7 +93,7 @@ I took my class on an afternoon field trip to RWDI, a local wind tunnel facility
 ## The class project
 I also re-did the class project. I wanted to design an authentic project that mirrors the type of analysis done in the real world. By the end of Fluids 1, students are able to do basic pipeline hydraulic design. The full project description is available [here](/docs/ME_351_Winter_2024_Project.pdf), and additional project materials are available [here](/docs/ME351_project.zip). Here is the gist of it:
 
-<img src="images/project_description.png"
+<img src="/images/project_description.png"
      style="display: block; margin: 0 auto;"
      alt="Project description"/>
 
