@@ -34,12 +34,11 @@ I provide goal-based feedback and mentorship designed to prepare students for th
 Regular communication forms the backbone of my supervisory approach. Students meet with me weekly for individual check-ins to ensure they feel mentally healthy and supported. 
 
 ## Practical Implementation of Mentorship Expectations
-Clear expectations and structured communication are essential for successful mentorship relationships. For each mentee, I develop a mentorship contract that establishes shared understanding from the project's beginning. This document addresses several key components:
-Shared vision of success: We establish quantifiable success indicators that both mentor and mentee can work toward together, ensuring alignment on project outcomes and personal development goals.
+Clear expectations and structured communication are essential for successful mentorship relationships. For each mentee, I develop a mentorship contract that establishes shared understanding from the project's beginning. This document addresses several key components, with the overall goal of establishing a *shared vision of what success looks like*.
 
 1. **Personal goals:** Both parties articulate what they aim to gain from the mentorship relationship, creating mutual accountability and purpose.
 
-2. **Project timeline, scope, and success indicators:** Clear boundaries around project duration, expected weekly working hours, and major milestones help students manage their time effectively, particularly important for undergraduate researchers who may be balancing coursework. We establish what sucess looks like in the project.
+2. **Project timeline, scope, and success indicators:** Clear boundaries around project duration, expected weekly working hours, and major milestones help students manage their time effectively. This is particularly important for undergraduate researchers who may be balancing coursework. We establish what sucess looks like in the project.
 
 3. **Support structures:** I maintain an open-door policy while establishing expectations for resourcefulness. Students understand that I am readily available when they encounter difficulties, but they are also expected to explain their attempts at independent problem-solving first.
 
