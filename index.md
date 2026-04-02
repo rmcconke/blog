@@ -15,6 +15,8 @@ I'm a postdoc working with the [Atomic Architects](https://atomicarchitects.com/
 <img src="images/ezgif.com-gif-maker_best_0.gif" alt="vortex shedding from a cube" style="width: 500px; height: auto;">
 
 ## News
+- **April 2026**: The Closure Challenge benchmark is fully live on [github](https://github.com/rmcconke/closure-challenge-benchmark). We also put a [preprint on arXiv](https://arxiv.org/abs/2603.28884) discussing this challenge, but the github page is the main source of up-to-date information for the benchmark. Ongoing submissions are encouraged!
+- **February 2026**: We have a preprint out on how the rotational nature of turbulence teaches rotational equivariance to neural networks. This is a continuation of our work presented at NeurIPS ML for Physical Sciences. Check it out on [arXiv](https://arxiv.org/abs/2602.04695).
 - **December 2025**: I'll be at the NeurIPS ML for Physical Sciences workshop. We're presenting a poster based on our on accepted [workshop paper](https://arxiv.org/abs/2509.20683) on distributional symmetry in turbulence. 
 - **November 2025**: I presented our [abstract](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=GcAsX_EAAAAJ&sortby=pubdate&citation_for_view=GcAsX_EAAAAJ:UebtZRa9Y70C) on equivariance for subgrid scale closure modelling at an Interact session at the APS DFD 2025 meeting ([poster](docs/2025.11.23_McConkey_Ryley_APS_DFD_Interact.pdf)).
 
@@ -23,8 +25,8 @@ I'm a postdoc working with the [Atomic Architects](https://atomicarchitects.com/
 - **September 2025**: We have a [preprint out](https://arxiv.org/abs/2509.20683) on distributional symmetry in turbulence, and how superresolution models can learn equivariance just from the rotational nature of turbulence data.
 
 
-- **April 2024**: I presented at the Chalmers University of Technology Data Science and Artificial Intelligence Seminar Series ([slides](docs/2025.04.14%20Talk%20at%20Chalmers%20University%20of%20Technology.pdf)). I also went to IKEA in Sweden. What else?
-- **March 2024**: I presented at the ERCOFTAC ML for Fluids Workshop in London ([slides](docs/2025.04.02%20ERCOFTAC%20Workshop%20Presentation.pdf)). It was a great workshop, and I enjoyed my time in London! 
+- **April 2025**: I presented at the Chalmers University of Technology Data Science and Artificial Intelligence Seminar Series ([slides](docs/2025.04.14%20Talk%20at%20Chalmers%20University%20of%20Technology.pdf)). I also went to IKEA in Sweden. What else?
+- **March 2025**: I presented at the ERCOFTAC ML for Fluids Workshop in London ([slides](docs/2025.04.02%20ERCOFTAC%20Workshop%20Presentation.pdf)). It was a great workshop, and I enjoyed my time in London! 
 
 
 
