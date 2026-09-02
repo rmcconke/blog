@@ -66,17 +66,60 @@ Outside work, I do landscape photography, play trombone in the MIT Concert Band,
 ## Personal records
  
 
-| Record | |
-|---|---|
-| Largest simulation | ~600,000 CPU hours: 30M cells on 512 cores, one week per run, several runs |
-| Largest dataset | 500 TB Ocean simulation on 1000 GPUs. Animation coming soon! |
-| Largest model trained | > 30M parameters |
-| Most GPUs at once | four H100s for a week, multi-node |
-| Largest tabular training run | 56M rows across four A100s. XGBoost, of course |
-| Deadlift | 365 lb × 5 |
-| Squat | 315 lb × 5 |
-| Bench press | 195 lb × 4 |
-| Hot dogs consumed at a sporting event | 6 |
+<style>
+.records {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0 1.8em;
+  font-size: 0.95em;
+}
+.records td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55em 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.records td:first-child {
+  width: 38%;
+  padding-right: 1.5em;
+  font-weight: 600;
+}
+.records tr:last-child td {
+  border-bottom: none;
+}
+@media (max-width: 620px) {
+  .records tr {
+    display: block;
+    padding: 0.7em 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .records tr:last-child {
+    border-bottom: none;
+  }
+  .records td,
+  .records td:first-child {
+    display: block;
+    width: auto;
+    padding: 0;
+    border-bottom: none;
+  }
+  .records td:first-child {
+    margin-bottom: 0.15em;
+  }
+}
+</style>
+ 
+<table class="records">
+<tr><td>Largest simulation</td><td>~600,000 CPU hours: 30M cells on 512 cores, one week per run, several runs</td></tr>
+<tr><td>Largest dataset</td><td>500 TB ocean simulation on 1000 GPUs. Animation coming soon!</td></tr>
+<tr><td>Largest model trained</td><td>&gt; 30M parameters</td></tr>
+<tr><td>Most GPUs at once</td><td>Four H100s for a week, multi-node</td></tr>
+<tr><td>Largest tabular training run</td><td>56M rows across four A100s. XGBoost, of course</td></tr>
+<tr><td>Deadlift</td><td>365 lb &times; 5</td></tr>
+<tr><td>Squat</td><td>315 lb &times; 5</td></tr>
+<tr><td>Bench press</td><td>195 lb &times; 4</td></tr>
+<tr><td>Hot dogs consumed at a sporting event</td><td>6</td></tr>
+</table>
 
 Here is a playlist with my favourite fluid mechanics videos:
 
