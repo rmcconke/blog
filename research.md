@@ -8,7 +8,7 @@ I build machine learning methods for fluid mechanics and turbulence. Most of wha
 
 ---
 
-## Turbulence closure modelling for RANS
+## Machine learning for turbulence modelling
 
 RANS is the workhorse of industrial CFD, and its primary weakness is the closure model. In my PhD, I developed a framework for injecting anisotropy predictions into RANS simulations in a way that is stable and well-conditioned.
 
