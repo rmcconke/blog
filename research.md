@@ -12,9 +12,9 @@ I build machine learning methods for fluid mechanics and turbulence. Most of wha
 
 RANS is the workhorse of industrial CFD, and its primary weakness is the closure model. In my PhD, I developed a framework for injecting anisotropy predictions into RANS simulations in a way that is stable and well-conditioned.
 
-<img src="/images/turb_modelling_rans.png" alt="Anisotropy tensor predictions in a square duct quadrant. TBNN/KCNN is the proposed architecture." style="width: 100%; max-width: 560px; height: auto;">
+<img src="/images/turb_modelling_rans.png" alt="Anisotropy tensor predictions in a square duct quadrant. DNS is the high-fidelity ground truth, $k$-$\omega$ SST is the prediction using a standard RANS model, and TBNN/KCNN is our proposed architecture." style="width: 100%; max-width: 560px; height: auto;">
 
-*Anisotropy tensor predictions in a square duct quadrant. TBNN/KCNN is the proposed architecture. From [Realisability-informed machine learning for turbulence anisotropy mappings](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/realisabilityinformed-machine-learning-for-turbulence-anisotropy-mappings/0FADE317B80F7962EA990D1D9EA3C24A), Journal of Fluid Mechanics 1019, A49 (2025).*
+*Anisotropy tensor predictions in a square duct quadrant. DNS is the high-fidelity ground truth, $k$-$\omega$ SST is the prediction using a standard RANS model, and TBNN/KCNN is our proposed architecture. From [Realisability-informed machine learning for turbulence anisotropy mappings](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/realisabilityinformed-machine-learning-for-turbulence-anisotropy-mappings/0FADE317B80F7962EA990D1D9EA3C24A), Journal of Fluid Mechanics 1019, A49 (2025).*
 
 I made three primary contributions to data-driven turbulence modelling during my PhD.
 
