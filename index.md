@@ -14,18 +14,17 @@ PhD, P.Eng.
 
 I'm a postdoc working with the [Atomic Architects](https://atomicarchitects.com/) and [Multiscale Mariners](https://multiscalemariners.com/) research groups at MIT. I build machine learning methods for fluid mechanics and turbulence, and I work on applying them to practical problems in engineering. My current work includes subgrid-scale modelling for LES, closure modelling and benchmarking for RANS, equivariant network architectures, and applications in ocean modelling and atmospheric re-entry. I love fluid mechanics, and computational fluid dynamics (CFD)! Check out my [YouTube playlist](https://youtube.com/playlist?list=PLuV-XJJZrRRdv2KTVYH8mer53Q9pl31mK&si=dF3x-q-c1wbmNGwZ), [lectures](https://youtube.com/playlist?list=PLuV-XJJZrRRdR_fZkK2JFPJcnh6oagg20&si=8jwyXrmZDP60qn3p), and [blog posts](/writing/).
 
-Alongside my PhD, I spent five years doing engineering design, simulation, and research in industry. I designed medical devices like autoinjectors and aerosol containment devices at [MACH 32](https://www.mach32.net/), automated CFD workflows at [Orbital Stack](https://orbitalstack.com/), and developed machine learning models for wind engineering at [RWDI](https://rwdi.com/en_ca/). I've been a licensed Professional Engineer in Ontario since 2024.
+Alongside my PhD, I spent five years doing engineering design, simulation, and research in industry. I designed medical devices like autoinjectors and aerosol containment devices at [MACH32](https://www.mach32.net/), automated CFD workflows at [Orbital Stack](https://orbitalstack.com/), and developed machine learning models for wind engineering at [RWDI](https://rwdi.com/en_ca/). I've been a licensed Professional Engineer in Ontario since 2024.
 
 <img src="/images/ezgif.com-gif-maker_best_0.gif" alt="vortex shedding from a cube" style="width: 500px; height: auto;">
 
 ## Selected work
 
-- **[The Closure Challenge](/software/#the-closure-challenge)**, a continuously running, field-wide benchmark for machine learning in RANS turbulence modelling, hosted under ERCOFTAC SIG 54. A decade of work in this area had produced no shared evaluation, so every study picked its own test flows. I started the benchmark and serve as benchmark steward. We have six international groups on the leaderboard so far. Check it out if you're interested in ML for RANS! [Preprint](https://arxiv.org/abs/2603.28884) / [Github](https://github.com/rmcconke/closure-challenge-benchmark)
+- **[The Closure Challenge](/research/#benchmarking-and-evaluation)**, a continuously running, field-wide benchmark for machine learning in RANS turbulence modelling, hosted under ERCOFTAC SIG 54. A decade of work in this area had produced no shared evaluation, so every study picked its own test flows. I started the benchmark and serve as benchmark steward. We have six international groups on the leaderboard so far. Check it out if you're interested in ML for RANS! [Preprint](https://arxiv.org/abs/2603.28884) / [Github](https://github.com/rmcconke/closure-challenge-benchmark)
 
-- **[Realizability-informed machine learning](/research/#turbulence-closure-modelling-for-rans)**, an equivariant model formulation for predicting the Reynolds stress anisotropy tensor in a realizable way. I replaced ad-hoc postprocessing of predicted anisotropy tensors with a physics-based loss that penalises non-realizable predictions during training, inside a framework that keeps eddy-viscosity conditioning. [JFM Paper](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/realisabilityinformed-machine-learning-for-turbulence-anisotropy-mappings/0FADE317B80F7962EA990D1D9EA3C24A)
+- **[Realizability-informed machine learning](/research/#machine-learning-for-turbulence-modelling)**, an equivariant model formulation for predicting the Reynolds stress anisotropy tensor in a realizable way. I replaced ad-hoc postprocessing of predicted anisotropy tensors with a physics-based loss that penalizes non-realizable predictions during training, inside a framework that keeps eddy-viscosity conditioning. [JFM Paper](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/realisabilityinformed-machine-learning-for-turbulence-anisotropy-mappings/0FADE317B80F7962EA990D1D9EA3C24A)
 
-- **[A curated dataset for data-driven turbulence modelling](/software/#a-curated-dataset-for-data-driven-turbulence-modelling)**, the first open-source dataset built for immediate use in ML-augmented closure modelling, with collocated RANS and high-fidelity data for the same flows. 895,640 data points, five flow families, four turbulence models. [Scientific Data Paper](https://doi.org/10.1038/s41597-021-01034-2) / [Kaggle](https://doi.org/10.34740/kaggle/dsv/2637500)
-
+- **A curated dataset for data-driven turbulence modelling**, the first open-source dataset built for immediate use in ML-augmented closure modelling, with collocated RANS and high-fidelity data for the same flows. 895,640 data points, five flow families, four turbulence models. [Scientific Data Paper](https://doi.org/10.1038/s41597-021-01034-2) / [Kaggle](https://doi.org/10.34740/kaggle/dsv/2637500)
 
 - **Machine learning for constitutive modelling in CHEFSI**, a DOE/NNSA PSAAP-IV Predictive Simulation Center at MIT. I lead the machine learning team (4-5 graduate students) on learning material response for thermal protection systems under atmospheric re-entry conditions. [CHEFSI website](https://chefsi.mit.edu/)
 
@@ -64,7 +63,6 @@ Outside work, I do landscape photography, play trombone in the MIT Concert Band,
 
 
 ## Personal records
- 
 
 <style>
 .records {
@@ -108,7 +106,7 @@ Outside work, I do landscape photography, play trombone in the MIT Concert Band,
   }
 }
 </style>
- 
+
 <table class="records">
 <tr><td>Largest simulation</td><td>~600,000 CPU hours: 30M cells on 512 cores, one week per run, several runs</td></tr>
 <tr><td>Largest dataset</td><td>500 TB ocean simulation on 1000 GPUs. Animation coming soon!</td></tr>
