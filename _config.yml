@@ -10,6 +10,11 @@ url: "https://ryleymcconkey.com" # the base hostname & protocol for your site, e
 author:
   name: Ryley McConkey
 
+# no leading @ here; jekyll-seo-tag adds it
+twitter:
+  username: McConkeyRyley
+  card: summary
+
 # jekyll-seo-tag: adds sameAs links to the Person schema, so search engines
 # connect this site to your Scholar/ORCID/GitHub profiles as one identity
 social:
@@ -19,9 +24,7 @@ social:
     - https://www.linkedin.com/in/ryley-mcconkey/
     - https://scholar.google.com/citations?user=GcAsX_EAAAAJ
     - https://orcid.org/0000-0003-0674-1849
-
-twitter:
-  card: summary
+    - https://twitter.com/McConkeyRyley
 
 # site-wide og:image; any page can override with `image:` in its front matter
 defaults:
