@@ -1,8 +1,34 @@
 title: Ryley McConkey
-# description: >- # this means to ignore newlines until "baseurl:"
-#  Machine Learning.
+description: >-
+  Ryley McConkey, PhD, P.Eng. Postdoctoral fellow at MIT working on machine
+  learning for fluid mechanics and turbulence: subgrid-scale modelling for LES,
+  closure modelling and benchmarking for RANS, equivariant neural networks, and
+  applications in ocean modelling and atmospheric re-entry.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ryleymcconkey.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+author:
+  name: Ryley McConkey
+
+# jekyll-seo-tag: adds sameAs links to the Person schema, so search engines
+# connect this site to your Scholar/ORCID/GitHub profiles as one identity
+social:
+  name: Ryley McConkey
+  links:
+    - https://github.com/rmcconke
+    - https://www.linkedin.com/in/ryley-mcconkey/
+    - https://scholar.google.com/citations?user=GcAsX_EAAAAJ
+    - https://orcid.org/0000-0003-0674-1849
+
+twitter:
+  card: summary
+
+# site-wide og:image; any page can override with `image:` in its front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/prof_pic.jpg
 
 google_analytics: UA-138897125-1
 permalink: /:categories/:year/:month/:title/
