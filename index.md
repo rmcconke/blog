@@ -29,8 +29,6 @@ Alongside my PhD, I spent five years doing engineering design, simulation, and r
 - **Machine learning for constitutive modelling in CHEFSI**, a DOE/NNSA PSAAP-IV Predictive Simulation Center at MIT. I lead the machine learning team (4-5 graduate students) on learning material response for thermal protection systems under atmospheric re-entry conditions. [CHEFSI website](https://chefsi.mit.edu/)
 
 ## News
-- **September 2026**: I'm on the job market this cycle, for both faculty positions and industry research roles. Please get in touch :)
-
 - **July 2026**: We have a new preprint out on rotational equivariance and locality in data-driven subgrid-scale closures for LES. Check it out on [arXiv](https://arxiv.org/abs/2607.26850).
 
 - **April 2026**: The Closure Challenge benchmark is fully live on [github](https://github.com/rmcconke/closure-challenge-benchmark). We also put a [preprint on arXiv](https://arxiv.org/abs/2603.28884) discussing this challenge, but the github page is the main source of up-to-date information for the benchmark. Ongoing submissions are encouraged!
