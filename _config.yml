@@ -33,7 +33,7 @@ defaults:
     values:
       image: /images/prof_pic.jpg
 
-google_analytics: UA-138897125-1
+google_analytics: G-Q8G71P0V68
 permalink: /:categories/:year/:month/:title/
 plugins:
   - jekyll-scholar
